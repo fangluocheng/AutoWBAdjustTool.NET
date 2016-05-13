@@ -32,10 +32,10 @@
             this.tabPageChroma = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxW80 = new System.Windows.Forms.TextBox();
-            this.textBoxW100 = new System.Windows.Forms.TextBox();
+            this.textBoxWhite = new System.Windows.Forms.TextBox();
+            this.textBox100IRE = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxW20 = new System.Windows.Forms.TextBox();
+            this.textBoxGrey = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxTiming = new System.Windows.Forms.TextBox();
             this.labelTiming = new System.Windows.Forms.Label();
@@ -74,14 +74,14 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBoxW80);
-            this.groupBox1.Controls.Add(this.textBoxW100);
+            this.groupBox1.Controls.Add(this.textBoxWhite);
+            this.groupBox1.Controls.Add(this.textBox100IRE);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBoxW20);
+            this.groupBox1.Controls.Add(this.textBoxGrey);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(11, 46);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(228, 75);
+            this.groupBox1.Size = new System.Drawing.Size(228, 44);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pattern";
@@ -89,66 +89,66 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 17);
+            this.label1.Location = new System.Drawing.Point(6, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 12);
+            this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 4;
-            this.label1.Text = "20%亮度";
+            this.label1.Text = "暗场";
             // 
-            // textBoxW80
+            // textBoxWhite
             // 
-            this.textBoxW80.Location = new System.Drawing.Point(180, 14);
-            this.textBoxW80.Name = "textBoxW80";
-            this.textBoxW80.Size = new System.Drawing.Size(30, 21);
-            this.textBoxW80.TabIndex = 7;
-            this.textBoxW80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxWhite.Location = new System.Drawing.Point(112, 14);
+            this.textBoxWhite.Name = "textBoxWhite";
+            this.textBoxWhite.Size = new System.Drawing.Size(28, 21);
+            this.textBoxWhite.TabIndex = 7;
+            this.textBoxWhite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBoxW100
+            // textBox100IRE
             // 
-            this.textBoxW100.Location = new System.Drawing.Point(71, 46);
-            this.textBoxW100.Name = "textBoxW100";
-            this.textBoxW100.Size = new System.Drawing.Size(30, 21);
-            this.textBoxW100.TabIndex = 9;
-            this.textBoxW100.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox100IRE.Location = new System.Drawing.Point(192, 14);
+            this.textBox100IRE.Name = "textBox100IRE";
+            this.textBox100IRE.Size = new System.Drawing.Size(28, 21);
+            this.textBox100IRE.TabIndex = 9;
+            this.textBox100IRE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(127, 17);
+            this.label2.Location = new System.Drawing.Point(77, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 12);
+            this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 6;
-            this.label2.Text = "80%亮度";
+            this.label2.Text = "亮场";
             // 
-            // textBoxW20
+            // textBoxGrey
             // 
-            this.textBoxW20.Location = new System.Drawing.Point(71, 14);
-            this.textBoxW20.Name = "textBoxW20";
-            this.textBoxW20.Size = new System.Drawing.Size(30, 21);
-            this.textBoxW20.TabIndex = 5;
-            this.textBoxW20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGrey.Location = new System.Drawing.Point(41, 14);
+            this.textBoxGrey.Name = "textBoxGrey";
+            this.textBoxGrey.Size = new System.Drawing.Size(28, 21);
+            this.textBoxGrey.TabIndex = 5;
+            this.textBoxGrey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 49);
+            this.label3.Location = new System.Drawing.Point(145, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 8;
-            this.label3.Text = "100%亮度";
+            this.label3.Text = "100IRE";
             // 
             // textBoxTiming
             // 
-            this.textBoxTiming.Location = new System.Drawing.Point(191, 10);
+            this.textBoxTiming.Location = new System.Drawing.Point(203, 10);
             this.textBoxTiming.Name = "textBoxTiming";
-            this.textBoxTiming.Size = new System.Drawing.Size(30, 21);
+            this.textBoxTiming.Size = new System.Drawing.Size(28, 21);
             this.textBoxTiming.TabIndex = 3;
             this.textBoxTiming.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelTiming
             // 
             this.labelTiming.AutoSize = true;
-            this.labelTiming.Location = new System.Drawing.Point(144, 14);
+            this.labelTiming.Location = new System.Drawing.Point(156, 14);
             this.labelTiming.Name = "labelTiming";
             this.labelTiming.Size = new System.Drawing.Size(41, 12);
             this.labelTiming.TabIndex = 2;
@@ -172,7 +172,7 @@
             "22294",
             "22294_A",
             "23294"});
-            this.comboBox1.Location = new System.Drawing.Point(59, 11);
+            this.comboBox1.Location = new System.Drawing.Point(52, 11);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(70, 20);
             this.comboBox1.TabIndex = 1;
@@ -180,7 +180,7 @@
             // labelModel
             // 
             this.labelModel.AutoSize = true;
-            this.labelModel.Location = new System.Drawing.Point(23, 14);
+            this.labelModel.Location = new System.Drawing.Point(17, 14);
             this.labelModel.Name = "labelModel";
             this.labelModel.Size = new System.Drawing.Size(29, 12);
             this.labelModel.TabIndex = 0;
@@ -227,10 +227,10 @@
         private System.Windows.Forms.TextBox textBoxTiming;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxW100;
+        private System.Windows.Forms.TextBox textBox100IRE;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxW80;
+        private System.Windows.Forms.TextBox textBoxWhite;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxW20;
+        private System.Windows.Forms.TextBox textBoxGrey;
     }
 }

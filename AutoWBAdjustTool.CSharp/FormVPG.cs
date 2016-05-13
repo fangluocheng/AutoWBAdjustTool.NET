@@ -23,7 +23,9 @@ namespace AutoWBAdjustTool.CSharp
             vpgChroma = new VPGChroma("22294");
             vpgChroma.InitVPGDevice();
             vpgChroma.ChangeTiming(textBoxTiming.Text);
-            vpgChroma.ChangePattern(textBoxW80.Text);
+            vpgChroma.ChangePattern(textBoxWhite.Text);
+
+            this.Hide();
         }
 
         private void FormVPG_Load(object sender, EventArgs e)

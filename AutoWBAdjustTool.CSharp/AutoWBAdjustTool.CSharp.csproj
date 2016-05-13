@@ -62,6 +62,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpec.Designer.cs">
+      <DependentUpon>FormSpec.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormVPG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     <Compile Include="VPGChroma.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpec.resx">
+      <DependentUpon>FormSpec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVPG.resx">
       <DependentUpon>FormVPG.cs</DependentUpon>
