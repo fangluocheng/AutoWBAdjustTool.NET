@@ -205,6 +205,7 @@
             this.Controls.Add(this.tabControlVPG);
             this.MaximizeBox = false;
             this.Name = "FormVPG";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "信号发生器设置";
             this.Load += new System.EventHandler(this.FormVPG_Load);
             this.tabControlVPG.ResumeLayout(false);

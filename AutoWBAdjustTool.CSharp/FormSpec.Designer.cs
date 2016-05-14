@@ -32,6 +32,14 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageColorTemp = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,18 +60,32 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.tabPageTv = new System.Windows.Forms.TabPage();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.tabPageRgb = new System.Windows.Forms.TabPage();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPageColorTemp.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPageRgb.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonSave
@@ -78,7 +100,7 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPageColorTemp);
-            this.tabControl1.Controls.Add(this.tabPageTv);
+            this.tabControl1.Controls.Add(this.tabPageRgb);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -87,6 +109,7 @@
             // 
             // tabPageColorTemp
             // 
+            this.tabPageColorTemp.Controls.Add(this.checkBox5);
             this.tabPageColorTemp.Controls.Add(this.groupBox1);
             this.tabPageColorTemp.Controls.Add(this.textBox7);
             this.tabPageColorTemp.Controls.Add(this.textBox8);
@@ -133,6 +156,74 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Magic 值";
             // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(194, 34);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(40, 21);
+            this.textBox9.TabIndex = 36;
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(119, 34);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(40, 21);
+            this.textBox10.TabIndex = 35;
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(194, 13);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(40, 21);
+            this.textBox11.TabIndex = 34;
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(119, 13);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(40, 21);
+            this.textBox12.TabIndex = 33;
+            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(177, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(11, 12);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "y";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 37);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 12);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Step of Offset  x";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(177, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(11, 12);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "y";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(107, 12);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Step of Gain    x";
+            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(200, 91);
@@ -172,9 +263,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(14, 72);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(132, 16);
+            this.checkBox1.Size = new System.Drawing.Size(108, 16);
             this.checkBox1.TabIndex = 31;
-            this.checkBox1.Text = "是否调整 Offset 值";
+            this.checkBox1.Text = "调整 Offset 值";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // textBox1
@@ -282,6 +373,8 @@
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Checked = true;
+            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(14, 50);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(48, 16);
@@ -292,6 +385,8 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Checked = true;
+            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Location = new System.Drawing.Point(14, 28);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(72, 16);
@@ -302,6 +397,8 @@
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
+            this.checkBox4.Checked = true;
+            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox4.Location = new System.Drawing.Point(14, 6);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(48, 16);
@@ -309,83 +406,223 @@
             this.checkBox4.Text = "Cool";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // tabPageTv
+            // tabPageRgb
             // 
-            this.tabPageTv.Location = new System.Drawing.Point(4, 22);
-            this.tabPageTv.Name = "tabPageTv";
-            this.tabPageTv.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTv.Size = new System.Drawing.Size(252, 182);
-            this.tabPageTv.TabIndex = 1;
-            this.tabPageTv.Text = "电视相关";
-            this.tabPageTv.UseVisualStyleBackColor = true;
+            this.tabPageRgb.Controls.Add(this.textBox21);
+            this.tabPageRgb.Controls.Add(this.label21);
+            this.tabPageRgb.Controls.Add(this.textBox22);
+            this.tabPageRgb.Controls.Add(this.label22);
+            this.tabPageRgb.Controls.Add(this.textBox20);
+            this.tabPageRgb.Controls.Add(this.label20);
+            this.tabPageRgb.Controls.Add(this.textBox19);
+            this.tabPageRgb.Controls.Add(this.label19);
+            this.tabPageRgb.Controls.Add(this.textBox16);
+            this.tabPageRgb.Controls.Add(this.label16);
+            this.tabPageRgb.Controls.Add(this.textBox17);
+            this.tabPageRgb.Controls.Add(this.textBox18);
+            this.tabPageRgb.Controls.Add(this.label17);
+            this.tabPageRgb.Controls.Add(this.label18);
+            this.tabPageRgb.Controls.Add(this.textBox15);
+            this.tabPageRgb.Controls.Add(this.label15);
+            this.tabPageRgb.Controls.Add(this.textBox13);
+            this.tabPageRgb.Controls.Add(this.textBox14);
+            this.tabPageRgb.Controls.Add(this.label13);
+            this.tabPageRgb.Controls.Add(this.label14);
+            this.tabPageRgb.Location = new System.Drawing.Point(4, 22);
+            this.tabPageRgb.Name = "tabPageRgb";
+            this.tabPageRgb.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageRgb.Size = new System.Drawing.Size(252, 182);
+            this.tabPageRgb.TabIndex = 1;
+            this.tabPageRgb.Text = "RGB 值设置";
+            this.tabPageRgb.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // textBox21
             // 
-            this.textBox9.Location = new System.Drawing.Point(194, 34);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(40, 21);
-            this.textBox9.TabIndex = 36;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox21.Location = new System.Drawing.Point(208, 93);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(35, 21);
+            this.textBox21.TabIndex = 74;
+            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // label21
             // 
-            this.textBox10.Location = new System.Drawing.Point(119, 34);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(40, 21);
-            this.textBox10.TabIndex = 35;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(158, 96);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(41, 12);
+            this.label21.TabIndex = 73;
+            this.label21.Text = "最大值";
             // 
-            // textBox11
+            // textBox22
             // 
-            this.textBox11.Location = new System.Drawing.Point(194, 13);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(40, 21);
-            this.textBox11.TabIndex = 34;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox22.Location = new System.Drawing.Point(102, 93);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(35, 21);
+            this.textBox22.TabIndex = 72;
+            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox12
+            // label22
             // 
-            this.textBox12.Location = new System.Drawing.Point(119, 13);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(40, 21);
-            this.textBox12.TabIndex = 33;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 96);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(89, 12);
+            this.label22.TabIndex = 71;
+            this.label22.Text = "Offset  最小值";
             // 
-            // label3
+            // textBox20
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(177, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(11, 12);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "y";
+            this.textBox20.Location = new System.Drawing.Point(208, 66);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(35, 21);
+            this.textBox20.TabIndex = 70;
+            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label4
+            // label20
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 37);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 12);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Step of Offset  x";
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(158, 69);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(41, 12);
+            this.label20.TabIndex = 69;
+            this.label20.Text = "最大值";
             // 
-            // label5
+            // textBox19
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(177, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(11, 12);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "y";
+            this.textBox19.Location = new System.Drawing.Point(102, 66);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(35, 21);
+            this.textBox19.TabIndex = 68;
+            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label6
+            // label19
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 12);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Step of Gain    x";
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 69);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(89, 12);
+            this.label19.TabIndex = 67;
+            this.label19.Text = "Gain    最小值";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(213, 39);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(30, 21);
+            this.textBox16.TabIndex = 66;
+            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(196, 42);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(11, 12);
+            this.label16.TabIndex = 65;
+            this.label16.Text = "B";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(160, 39);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(30, 21);
+            this.textBox17.TabIndex = 64;
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(107, 39);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(30, 21);
+            this.textBox18.TabIndex = 63;
+            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(143, 42);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(11, 12);
+            this.label17.TabIndex = 62;
+            this.label17.Text = "G";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 42);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(95, 12);
+            this.label18.TabIndex = 61;
+            this.label18.Text = "Offset 预设值 R";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(213, 12);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(30, 21);
+            this.textBox15.TabIndex = 60;
+            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(196, 15);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(11, 12);
+            this.label15.TabIndex = 59;
+            this.label15.Text = "B";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(160, 12);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
+            this.textBox13.Size = new System.Drawing.Size(30, 21);
+            this.textBox13.TabIndex = 58;
+            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(107, 12);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(30, 21);
+            this.textBox14.TabIndex = 57;
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(143, 15);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(11, 12);
+            this.label13.TabIndex = 56;
+            this.label13.Text = "G";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 15);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(95, 12);
+            this.label14.TabIndex = 55;
+            this.label14.Text = "Gain 预设值   R";
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Checked = true;
+            this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox5.Location = new System.Drawing.Point(168, 72);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(72, 16);
+            this.checkBox5.TabIndex = 37;
+            this.checkBox5.Text = "检查色温";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // FormSpec
             // 
@@ -395,12 +632,15 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonSave);
             this.Name = "FormSpec";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "规格设置";
             this.tabControl1.ResumeLayout(false);
             this.tabPageColorTemp.ResumeLayout(false);
             this.tabPageColorTemp.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPageRgb.ResumeLayout(false);
+            this.tabPageRgb.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -409,7 +649,7 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageColorTemp;
-        private System.Windows.Forms.TabPage tabPageTv;
+        private System.Windows.Forms.TabPage tabPageRgb;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -439,5 +679,26 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.CheckBox checkBox5;
     }
 }

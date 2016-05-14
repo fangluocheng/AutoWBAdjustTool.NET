@@ -26,5 +26,11 @@ namespace AutoWBAdjustTool.CSharp
             FormVPG formVPG = new FormVPG();
             formVPG.Show();
         }
+
+        private void ToolStripMenuItemSpecSetting_Click(object sender, EventArgs e)
+        {
+            FormSpec formSpec = new FormSpec();
+            formSpec.Show();
+        }
     }
 }

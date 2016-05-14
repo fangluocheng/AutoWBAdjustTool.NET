@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemVPG = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemSpecSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             // 设置ToolStripMenuItem
             // 
             this.设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItemVPG});
+            this.ToolStripMenuItemVPG,
+            this.ToolStripMenuItemSpecSetting});
             this.设置ToolStripMenuItem.Name = "设置ToolStripMenuItem";
             this.设置ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.设置ToolStripMenuItem.Text = "设置";
@@ -59,6 +61,13 @@
             this.ToolStripMenuItemVPG.Text = "信号发生器";
             this.ToolStripMenuItemVPG.Click += new System.EventHandler(this.ToolStripMenuItemVPG_Click);
             // 
+            // ToolStripMenuItemSpecSetting
+            // 
+            this.ToolStripMenuItemSpecSetting.Name = "ToolStripMenuItemSpecSetting";
+            this.ToolStripMenuItemSpecSetting.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItemSpecSetting.Text = "规格设置";
+            this.ToolStripMenuItemSpecSetting.Click += new System.EventHandler(this.ToolStripMenuItemSpecSetting_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -68,6 +77,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -82,6 +92,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemVPG;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSpecSetting;
     }
 }
 
