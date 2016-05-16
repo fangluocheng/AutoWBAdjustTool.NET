@@ -31,6 +31,7 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageColorTemp = new System.Windows.Forms.TabPage();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -81,11 +82,15 @@
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.tabPageLv = new System.Windows.Forms.TabPage();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBoxLvSpec = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPageColorTemp.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPageRgb.SuspendLayout();
+            this.tabPageLv.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonSave
@@ -101,6 +106,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPageColorTemp);
             this.tabControl1.Controls.Add(this.tabPageRgb);
+            this.tabControl1.Controls.Add(this.tabPageLv);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -138,6 +144,18 @@
             this.tabPageColorTemp.TabIndex = 0;
             this.tabPageColorTemp.Text = "色温设置";
             this.tabPageColorTemp.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Checked = true;
+            this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox5.Location = new System.Drawing.Point(168, 72);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(72, 16);
+            this.checkBox5.TabIndex = 37;
+            this.checkBox5.Text = "检查色温";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -612,17 +630,41 @@
             this.label14.TabIndex = 55;
             this.label14.Text = "Gain 预设值   R";
             // 
-            // checkBox5
+            // tabPageLv
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Checked = true;
-            this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox5.Location = new System.Drawing.Point(168, 72);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(72, 16);
-            this.checkBox5.TabIndex = 37;
-            this.checkBox5.Text = "检查色温";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.tabPageLv.Controls.Add(this.textBoxLvSpec);
+            this.tabPageLv.Controls.Add(this.label24);
+            this.tabPageLv.Controls.Add(this.label23);
+            this.tabPageLv.Location = new System.Drawing.Point(4, 22);
+            this.tabPageLv.Name = "tabPageLv";
+            this.tabPageLv.Size = new System.Drawing.Size(252, 182);
+            this.tabPageLv.TabIndex = 2;
+            this.tabPageLv.Text = "亮度规格设置";
+            this.tabPageLv.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.Location = new System.Drawing.Point(12, 48);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(229, 70);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "亮度规格：\r\n    白平衡调整结束后，将电视的对比度、亮度和背光都设置成100。此时测得的亮度值需要大于“亮度规格”设置的值。否则会提示失败。";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(12, 17);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(53, 12);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "亮度规格";
+            // 
+            // textBoxLvSpec
+            // 
+            this.textBoxLvSpec.Location = new System.Drawing.Point(74, 14);
+            this.textBoxLvSpec.Name = "textBoxLvSpec";
+            this.textBoxLvSpec.Size = new System.Drawing.Size(35, 21);
+            this.textBoxLvSpec.TabIndex = 4;
             // 
             // FormSpec
             // 
@@ -641,6 +683,8 @@
             this.groupBox1.PerformLayout();
             this.tabPageRgb.ResumeLayout(false);
             this.tabPageRgb.PerformLayout();
+            this.tabPageLv.ResumeLayout(false);
+            this.tabPageLv.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -700,5 +744,9 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.TabPage tabPageLv;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBoxLvSpec;
     }
 }

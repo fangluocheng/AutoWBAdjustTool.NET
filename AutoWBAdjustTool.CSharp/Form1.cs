@@ -21,16 +21,22 @@ namespace AutoWBAdjustTool.CSharp
 
         }
 
-        private void ToolStripMenuItemVPG_Click(object sender, EventArgs e)
+        private void toolStripMenuItemVPG_Click(object sender, EventArgs e)
         {
             FormVPG formVPG = new FormVPG();
             formVPG.Show();
         }
 
-        private void ToolStripMenuItemSpecSetting_Click(object sender, EventArgs e)
+        private void toolStripMenuItemSpecSetting_Click(object sender, EventArgs e)
         {
             FormSpec formSpec = new FormSpec();
             formSpec.Show();
+        }
+
+        private void toolStripMenuItemCommonSetting_Click(object sender, EventArgs e)
+        {
+            FormCommonSetting formCommonSetting = new FormCommonSetting();
+            formCommonSetting.Show();
         }
     }
 }

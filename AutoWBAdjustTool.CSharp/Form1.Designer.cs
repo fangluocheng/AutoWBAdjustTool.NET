@@ -29,44 +29,53 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemVPG = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItemSpecSetting = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemSetting = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemVPG = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemSpecSetting = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemCommonSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.设置ToolStripMenuItem});
+            this.toolStripMenuItemSetting});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(284, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // 设置ToolStripMenuItem
+            // toolStripMenuItemSetting
             // 
-            this.设置ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ToolStripMenuItemVPG,
-            this.ToolStripMenuItemSpecSetting});
-            this.设置ToolStripMenuItem.Name = "设置ToolStripMenuItem";
-            this.设置ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.设置ToolStripMenuItem.Text = "设置";
+            this.toolStripMenuItemSetting.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemVPG,
+            this.toolStripMenuItemSpecSetting,
+            this.toolStripMenuItemCommonSetting});
+            this.toolStripMenuItemSetting.Name = "toolStripMenuItemSetting";
+            this.toolStripMenuItemSetting.Size = new System.Drawing.Size(44, 21);
+            this.toolStripMenuItemSetting.Text = "设置";
             // 
-            // ToolStripMenuItemVPG
+            // toolStripMenuItemVPG
             // 
-            this.ToolStripMenuItemVPG.Name = "ToolStripMenuItemVPG";
-            this.ToolStripMenuItemVPG.Size = new System.Drawing.Size(152, 22);
-            this.ToolStripMenuItemVPG.Text = "信号发生器";
-            this.ToolStripMenuItemVPG.Click += new System.EventHandler(this.ToolStripMenuItemVPG_Click);
+            this.toolStripMenuItemVPG.Name = "toolStripMenuItemVPG";
+            this.toolStripMenuItemVPG.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemVPG.Text = "信号发生器";
+            this.toolStripMenuItemVPG.Click += new System.EventHandler(this.toolStripMenuItemVPG_Click);
             // 
-            // ToolStripMenuItemSpecSetting
+            // toolStripMenuItemSpecSetting
             // 
-            this.ToolStripMenuItemSpecSetting.Name = "ToolStripMenuItemSpecSetting";
-            this.ToolStripMenuItemSpecSetting.Size = new System.Drawing.Size(152, 22);
-            this.ToolStripMenuItemSpecSetting.Text = "规格设置";
-            this.ToolStripMenuItemSpecSetting.Click += new System.EventHandler(this.ToolStripMenuItemSpecSetting_Click);
+            this.toolStripMenuItemSpecSetting.Name = "toolStripMenuItemSpecSetting";
+            this.toolStripMenuItemSpecSetting.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemSpecSetting.Text = "规格设置";
+            this.toolStripMenuItemSpecSetting.Click += new System.EventHandler(this.toolStripMenuItemSpecSetting_Click);
+            // 
+            // toolStripMenuItemCommonSetting
+            // 
+            this.toolStripMenuItemCommonSetting.Name = "toolStripMenuItemCommonSetting";
+            this.toolStripMenuItemCommonSetting.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemCommonSetting.Text = "通用设置";
+            this.toolStripMenuItemCommonSetting.Click += new System.EventHandler(this.toolStripMenuItemCommonSetting_Click);
             // 
             // Form1
             // 
@@ -90,9 +99,10 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 设置ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemVPG;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemSpecSetting;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemSetting;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemVPG;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemSpecSetting;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemCommonSetting;
     }
 }
 
