@@ -38,5 +38,11 @@ namespace AutoWBAdjustTool.CSharp
             FormCommonSetting formCommonSetting = new FormCommonSetting();
             formCommonSetting.Show();
         }
+
+        private void toolStripMenuItemColorAnalyzer_Click(object sender, EventArgs e)
+        {
+            FormColorAnalyzer formColorAnalyzer = new FormColorAnalyzer();
+            formColorAnalyzer.Show();
+        }
     }
 }

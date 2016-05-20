@@ -70,6 +70,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormColorAnalyzer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormColorAnalyzer.Designer.cs">
+      <DependentUpon>FormColorAnalyzer.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCommonSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     <Compile Include="VPGChroma.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormColorAnalyzer.resx">
+      <DependentUpon>FormColorAnalyzer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCommonSetting.resx">
       <DependentUpon>FormCommonSetting.cs</DependentUpon>
