@@ -59,21 +59,21 @@
             // toolStripMenuItemVPG
             // 
             this.toolStripMenuItemVPG.Name = "toolStripMenuItemVPG";
-            this.toolStripMenuItemVPG.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemVPG.Size = new System.Drawing.Size(136, 22);
             this.toolStripMenuItemVPG.Text = "信号发生器";
             this.toolStripMenuItemVPG.Click += new System.EventHandler(this.toolStripMenuItemVPG_Click);
             // 
             // toolStripMenuItemSpecSetting
             // 
             this.toolStripMenuItemSpecSetting.Name = "toolStripMenuItemSpecSetting";
-            this.toolStripMenuItemSpecSetting.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemSpecSetting.Size = new System.Drawing.Size(136, 22);
             this.toolStripMenuItemSpecSetting.Text = "规格设置";
             this.toolStripMenuItemSpecSetting.Click += new System.EventHandler(this.toolStripMenuItemSpecSetting_Click);
             // 
             // toolStripMenuItemCommonSetting
             // 
             this.toolStripMenuItemCommonSetting.Name = "toolStripMenuItemCommonSetting";
-            this.toolStripMenuItemCommonSetting.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItemCommonSetting.Size = new System.Drawing.Size(136, 22);
             this.toolStripMenuItemCommonSetting.Text = "通用设置";
             this.toolStripMenuItemCommonSetting.Click += new System.EventHandler(this.toolStripMenuItemCommonSetting_Click);
             // 

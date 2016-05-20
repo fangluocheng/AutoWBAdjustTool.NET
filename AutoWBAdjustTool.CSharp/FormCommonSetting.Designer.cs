@@ -45,8 +45,11 @@
             this.tabPageI2c = new System.Windows.Forms.TabPage();
             this.comboBoxI2cClockRate = new System.Windows.Forms.ComboBox();
             this.labelI2cClockRate = new System.Windows.Forms.Label();
+            this.labelIpAddr = new System.Windows.Forms.Label();
+            this.ipAddressControl1 = new AutoWBAdjustTool.CSharp.IPAddressControl();
             this.tabControl1.SuspendLayout();
             this.tabPageSerialPort.SuspendLayout();
+            this.tabPageNetwork.SuspendLayout();
             this.tabPageI2c.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,6 +178,8 @@
             // 
             // tabPageNetwork
             // 
+            this.tabPageNetwork.Controls.Add(this.ipAddressControl1);
+            this.tabPageNetwork.Controls.Add(this.labelIpAddr);
             this.tabPageNetwork.Location = new System.Drawing.Point(4, 22);
             this.tabPageNetwork.Name = "tabPageNetwork";
             this.tabPageNetwork.Padding = new System.Windows.Forms.Padding(3);
@@ -211,6 +216,30 @@
             this.labelI2cClockRate.TabIndex = 10;
             this.labelI2cClockRate.Text = "Clock Rate";
             // 
+            // labelIpAddr
+            // 
+            this.labelIpAddr.AutoSize = true;
+            this.labelIpAddr.Location = new System.Drawing.Point(12, 12);
+            this.labelIpAddr.Name = "labelIpAddr";
+            this.labelIpAddr.Size = new System.Drawing.Size(89, 12);
+            this.labelIpAddr.TabIndex = 9;
+            this.labelIpAddr.Text = "电视的 IP 地址";
+            // 
+            // ipAddressControl1
+            // 
+            this.ipAddressControl1.AllowInternalTab = false;
+            this.ipAddressControl1.AutoHeight = true;
+            this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
+            this.ipAddressControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ipAddressControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ipAddressControl1.Location = new System.Drawing.Point(107, 6);
+            this.ipAddressControl1.MinimumSize = new System.Drawing.Size(96, 21);
+            this.ipAddressControl1.Name = "ipAddressControl1";
+            this.ipAddressControl1.ReadOnly = false;
+            this.ipAddressControl1.Size = new System.Drawing.Size(128, 21);
+            this.ipAddressControl1.TabIndex = 10;
+            this.ipAddressControl1.Text = "...";
+            // 
             // FormCommonSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -230,6 +259,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPageSerialPort.ResumeLayout(false);
             this.tabPageSerialPort.PerformLayout();
+            this.tabPageNetwork.ResumeLayout(false);
+            this.tabPageNetwork.PerformLayout();
             this.tabPageI2c.ResumeLayout(false);
             this.tabPageI2c.PerformLayout();
             this.ResumeLayout(false);
@@ -256,5 +287,7 @@
         private System.Windows.Forms.Label labelBaudRate;
         private System.Windows.Forms.ComboBox comboBoxI2cClockRate;
         private System.Windows.Forms.Label labelI2cClockRate;
+        private System.Windows.Forms.Label labelIpAddr;
+        private IPAddressControl ipAddressControl1;
     }
 }
