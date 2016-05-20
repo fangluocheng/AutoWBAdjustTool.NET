@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCommonSetting));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxInputSrc = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,11 +43,11 @@
             this.comboBoxComId = new System.Windows.Forms.ComboBox();
             this.labelComId = new System.Windows.Forms.Label();
             this.tabPageNetwork = new System.Windows.Forms.TabPage();
+            this.ipAddressControl1 = new AutoWBAdjustTool.CSharp.IPAddressControl();
+            this.labelIpAddr = new System.Windows.Forms.Label();
             this.tabPageI2c = new System.Windows.Forms.TabPage();
             this.comboBoxI2cClockRate = new System.Windows.Forms.ComboBox();
             this.labelI2cClockRate = new System.Windows.Forms.Label();
-            this.labelIpAddr = new System.Windows.Forms.Label();
-            this.ipAddressControl1 = new AutoWBAdjustTool.CSharp.IPAddressControl();
             this.tabControl1.SuspendLayout();
             this.tabPageSerialPort.SuspendLayout();
             this.tabPageNetwork.SuspendLayout();
@@ -188,6 +189,30 @@
             this.tabPageNetwork.Text = "网口设置";
             this.tabPageNetwork.UseVisualStyleBackColor = true;
             // 
+            // ipAddressControl1
+            // 
+            this.ipAddressControl1.AllowInternalTab = false;
+            this.ipAddressControl1.AutoHeight = true;
+            this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
+            this.ipAddressControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ipAddressControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ipAddressControl1.Location = new System.Drawing.Point(107, 6);
+            this.ipAddressControl1.MinimumSize = new System.Drawing.Size(96, 21);
+            this.ipAddressControl1.Name = "ipAddressControl1";
+            this.ipAddressControl1.ReadOnly = false;
+            this.ipAddressControl1.Size = new System.Drawing.Size(128, 21);
+            this.ipAddressControl1.TabIndex = 10;
+            this.ipAddressControl1.Text = "...";
+            // 
+            // labelIpAddr
+            // 
+            this.labelIpAddr.AutoSize = true;
+            this.labelIpAddr.Location = new System.Drawing.Point(12, 12);
+            this.labelIpAddr.Name = "labelIpAddr";
+            this.labelIpAddr.Size = new System.Drawing.Size(89, 12);
+            this.labelIpAddr.TabIndex = 9;
+            this.labelIpAddr.Text = "电视的 IP 地址";
+            // 
             // tabPageI2c
             // 
             this.tabPageI2c.Controls.Add(this.comboBoxI2cClockRate);
@@ -216,30 +241,6 @@
             this.labelI2cClockRate.TabIndex = 10;
             this.labelI2cClockRate.Text = "Clock Rate";
             // 
-            // labelIpAddr
-            // 
-            this.labelIpAddr.AutoSize = true;
-            this.labelIpAddr.Location = new System.Drawing.Point(12, 12);
-            this.labelIpAddr.Name = "labelIpAddr";
-            this.labelIpAddr.Size = new System.Drawing.Size(89, 12);
-            this.labelIpAddr.TabIndex = 9;
-            this.labelIpAddr.Text = "电视的 IP 地址";
-            // 
-            // ipAddressControl1
-            // 
-            this.ipAddressControl1.AllowInternalTab = false;
-            this.ipAddressControl1.AutoHeight = true;
-            this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
-            this.ipAddressControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ipAddressControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ipAddressControl1.Location = new System.Drawing.Point(107, 6);
-            this.ipAddressControl1.MinimumSize = new System.Drawing.Size(96, 21);
-            this.ipAddressControl1.Name = "ipAddressControl1";
-            this.ipAddressControl1.ReadOnly = false;
-            this.ipAddressControl1.Size = new System.Drawing.Size(128, 21);
-            this.ipAddressControl1.TabIndex = 10;
-            this.ipAddressControl1.Text = "...";
-            // 
             // FormCommonSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -253,6 +254,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxInputSrc);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCommonSetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "通用设置";

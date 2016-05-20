@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormColorAnalyzer));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageKM = new System.Windows.Forms.TabPage();
+            this.textBoxChannel = new System.Windows.Forms.TextBox();
+            this.labelChannel = new System.Windows.Forms.Label();
             this.comboBoxModel = new System.Windows.Forms.ComboBox();
             this.labelModel = new System.Windows.Forms.Label();
             this.buttonSave = new System.Windows.Forms.Button();
-            this.labelChannel = new System.Windows.Forms.Label();
-            this.textBoxChannel = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPageKM.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +62,22 @@
             this.tabPageKM.TabIndex = 0;
             this.tabPageKM.Text = "KONICA MINOLTA";
             this.tabPageKM.UseVisualStyleBackColor = true;
+            // 
+            // textBoxChannel
+            // 
+            this.textBoxChannel.Location = new System.Drawing.Point(186, 10);
+            this.textBoxChannel.Name = "textBoxChannel";
+            this.textBoxChannel.Size = new System.Drawing.Size(40, 21);
+            this.textBoxChannel.TabIndex = 5;
+            // 
+            // labelChannel
+            // 
+            this.labelChannel.AutoSize = true;
+            this.labelChannel.Location = new System.Drawing.Point(151, 14);
+            this.labelChannel.Name = "labelChannel";
+            this.labelChannel.Size = new System.Drawing.Size(29, 12);
+            this.labelChannel.TabIndex = 4;
+            this.labelChannel.Text = "通道";
             // 
             // comboBoxModel
             // 
@@ -91,22 +108,6 @@
             this.buttonSave.Text = "保存";
             this.buttonSave.UseVisualStyleBackColor = true;
             // 
-            // labelChannel
-            // 
-            this.labelChannel.AutoSize = true;
-            this.labelChannel.Location = new System.Drawing.Point(151, 14);
-            this.labelChannel.Name = "labelChannel";
-            this.labelChannel.Size = new System.Drawing.Size(29, 12);
-            this.labelChannel.TabIndex = 4;
-            this.labelChannel.Text = "通道";
-            // 
-            // textBoxChannel
-            // 
-            this.textBoxChannel.Location = new System.Drawing.Point(186, 10);
-            this.textBoxChannel.Name = "textBoxChannel";
-            this.textBoxChannel.Size = new System.Drawing.Size(40, 21);
-            this.textBoxChannel.TabIndex = 5;
-            // 
             // FormColorAnalyzer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -114,6 +115,7 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormColorAnalyzer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "色彩分析仪设置";

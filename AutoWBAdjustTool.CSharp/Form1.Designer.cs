@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItemSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemVPG = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +48,9 @@
             this.labelModelName = new System.Windows.Forms.Label();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.labelLv = new System.Windows.Forms.Label();
+            this.labelx = new System.Windows.Forms.Label();
+            this.labely = new System.Windows.Forms.Label();
             this.labelSpecLv = new System.Windows.Forms.Label();
             this.labelSpecy = new System.Windows.Forms.Label();
             this.labelSpecx = new System.Windows.Forms.Label();
@@ -54,10 +58,7 @@
             this.labelValueLv = new System.Windows.Forms.Label();
             this.labelValuey = new System.Windows.Forms.Label();
             this.labelValuex = new System.Windows.Forms.Label();
-            this.labelLv = new System.Windows.Forms.Label();
             this.labelValue = new System.Windows.Forms.Label();
-            this.labelx = new System.Windows.Forms.Label();
-            this.labely = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCoordinate)).BeginInit();
@@ -285,6 +286,33 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(251, 79);
             this.tableLayoutPanel1.TabIndex = 17;
             // 
+            // labelLv
+            // 
+            this.labelLv.Location = new System.Drawing.Point(185, 1);
+            this.labelLv.Name = "labelLv";
+            this.labelLv.Size = new System.Drawing.Size(60, 18);
+            this.labelLv.TabIndex = 3;
+            this.labelLv.Text = "Lv";
+            this.labelLv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelx
+            // 
+            this.labelx.Location = new System.Drawing.Point(51, 1);
+            this.labelx.Name = "labelx";
+            this.labelx.Size = new System.Drawing.Size(60, 18);
+            this.labelx.TabIndex = 1;
+            this.labelx.Text = "x";
+            this.labelx.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labely
+            // 
+            this.labely.Location = new System.Drawing.Point(118, 1);
+            this.labely.Name = "labely";
+            this.labely.Size = new System.Drawing.Size(60, 18);
+            this.labely.TabIndex = 2;
+            this.labely.Text = "y";
+            this.labely.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // labelSpecLv
             // 
             this.labelSpecLv.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -355,15 +383,6 @@
             this.labelValuex.Text = "2700";
             this.labelValuex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelLv
-            // 
-            this.labelLv.Location = new System.Drawing.Point(185, 1);
-            this.labelLv.Name = "labelLv";
-            this.labelLv.Size = new System.Drawing.Size(60, 18);
-            this.labelLv.TabIndex = 3;
-            this.labelLv.Text = "Lv";
-            this.labelLv.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // labelValue
             // 
             this.labelValue.Location = new System.Drawing.Point(1, 24);
@@ -374,24 +393,6 @@
             this.labelValue.Text = "Value";
             this.labelValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelx
-            // 
-            this.labelx.Location = new System.Drawing.Point(51, 1);
-            this.labelx.Name = "labelx";
-            this.labelx.Size = new System.Drawing.Size(60, 18);
-            this.labelx.TabIndex = 1;
-            this.labelx.Text = "x";
-            this.labelx.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labely
-            // 
-            this.labely.Location = new System.Drawing.Point(118, 1);
-            this.labely.Name = "labely";
-            this.labely.Size = new System.Drawing.Size(60, 18);
-            this.labely.TabIndex = 2;
-            this.labely.Text = "y";
-            this.labely.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -399,6 +400,7 @@
             this.ClientSize = new System.Drawing.Size(634, 342);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";

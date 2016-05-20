@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSpec));
             this.buttonSave = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageColorTemp = new System.Windows.Forms.TabPage();
@@ -83,9 +84,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPageLv = new System.Windows.Forms.TabPage();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.textBoxLvSpec = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPageColorTemp.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -642,13 +643,12 @@
             this.tabPageLv.Text = "亮度规格设置";
             this.tabPageLv.UseVisualStyleBackColor = true;
             // 
-            // label23
+            // textBoxLvSpec
             // 
-            this.label23.Location = new System.Drawing.Point(12, 48);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(229, 70);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "亮度规格：\r\n    白平衡调整结束后，将电视的对比度、亮度和背光都设置成100。此时测得的亮度值需要大于“亮度规格”设置的值。否则会提示失败。";
+            this.textBoxLvSpec.Location = new System.Drawing.Point(74, 14);
+            this.textBoxLvSpec.Name = "textBoxLvSpec";
+            this.textBoxLvSpec.Size = new System.Drawing.Size(35, 21);
+            this.textBoxLvSpec.TabIndex = 4;
             // 
             // label24
             // 
@@ -659,12 +659,13 @@
             this.label24.TabIndex = 2;
             this.label24.Text = "亮度规格";
             // 
-            // textBoxLvSpec
+            // label23
             // 
-            this.textBoxLvSpec.Location = new System.Drawing.Point(74, 14);
-            this.textBoxLvSpec.Name = "textBoxLvSpec";
-            this.textBoxLvSpec.Size = new System.Drawing.Size(35, 21);
-            this.textBoxLvSpec.TabIndex = 4;
+            this.label23.Location = new System.Drawing.Point(12, 48);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(229, 70);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "亮度规格：\r\n    白平衡调整结束后，将电视的对比度、亮度和背光都设置成100。此时测得的亮度值需要大于“亮度规格”设置的值。否则会提示失败。";
             // 
             // FormSpec
             // 
@@ -673,6 +674,7 @@
             this.ClientSize = new System.Drawing.Size(284, 261);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonSave);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSpec";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "规格设置";
