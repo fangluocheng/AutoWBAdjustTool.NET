@@ -18,7 +18,16 @@ namespace AutoWBAdjustTool.CSharp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            FormSplash formSplash = new FormSplash();
+            formSplash.TopMost = true;
+            this.Hide();
+            this.ShowInTaskbar = false;
 
+            if (formSplash.ShowDialog() == DialogResult.OK)
+            {
+                this.ShowInTaskbar = true;
+                this.Show();
+            }
         }
 
         private void toolStripMenuItemVPG_Click(object sender, EventArgs e)
