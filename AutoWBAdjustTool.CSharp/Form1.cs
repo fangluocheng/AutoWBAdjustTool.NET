@@ -25,6 +25,15 @@ namespace AutoWBAdjustTool.CSharp
 
             if (formSplash.ShowDialog() == DialogResult.OK)
             {
+                if (ConfigXmlHandler.GetNodeValue("tvBrand").ToUpper() == "CAN")
+                {
+                    pictureBoxLogo.Image = global::AutoWBAdjustTool.CSharp.Properties.Resources.CANTV;
+                }
+                else if (ConfigXmlHandler.GetNodeValue("tvBrand").ToUpper() == "HAIER")
+                {
+                    pictureBoxLogo.Image = global::AutoWBAdjustTool.CSharp.Properties.Resources.Haier;
+                }
+
                 this.ShowInTaskbar = true;
                 this.Show();
             }

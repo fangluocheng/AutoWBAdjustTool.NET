@@ -51,6 +51,10 @@ namespace AutoWBAdjustTool.CSharp
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            ConfigXmlHandler.SetNodeValue("tvBrand", comboBoxBrand.Text);
+            ConfigXmlHandler.SetNodeValue("tvModel", comboBoxModel.Text);
+            ConfigXmlHandler.SaveConfigXml();
+
             this.DialogResult = DialogResult.OK;
             this.Dispose();
         }
