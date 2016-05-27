@@ -82,6 +82,10 @@ namespace AutoWBAdjustTool.CSharp
             {
                 pictureBoxLogo.Image = global::AutoWBAdjustTool.CSharp.Properties.Resources.Haier;
             }
+            else if (comboBoxBrand.Text.ToUpper() == "LETV")
+            {
+                pictureBoxLogo.Image = global::AutoWBAdjustTool.CSharp.Properties.Resources.Letv;
+            }
         }
     }
 }

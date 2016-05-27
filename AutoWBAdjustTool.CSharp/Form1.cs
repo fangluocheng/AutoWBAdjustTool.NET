@@ -33,6 +33,10 @@ namespace AutoWBAdjustTool.CSharp
                 {
                     pictureBoxLogo.Image = global::AutoWBAdjustTool.CSharp.Properties.Resources.Haier;
                 }
+                else if (ConfigXmlHandler.GetNodeValue("tvBrand").ToUpper() == "LETV")
+                {
+                    pictureBoxLogo.Image = global::AutoWBAdjustTool.CSharp.Properties.Resources.Letv;
+                }
 
                 labelModelName.Text = ConfigXmlHandler.GetNodeValue("tvModel");
 
