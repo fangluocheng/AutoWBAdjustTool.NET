@@ -34,6 +34,8 @@ namespace AutoWBAdjustTool.CSharp
                     pictureBoxLogo.Image = global::AutoWBAdjustTool.CSharp.Properties.Resources.Haier;
                 }
 
+                labelModelName.Text = ConfigXmlHandler.GetNodeValue("tvModel");
+
                 this.ShowInTaskbar = true;
                 this.Show();
             }

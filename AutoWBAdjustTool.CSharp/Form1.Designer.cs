@@ -253,6 +253,7 @@
             this.pictureBoxLogo.InitialImage = null;
             this.pictureBoxLogo.Location = new System.Drawing.Point(-1, -1);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.pictureBoxLogo.Size = new System.Drawing.Size(161, 50);
             this.pictureBoxLogo.TabIndex = 3;
             this.pictureBoxLogo.TabStop = false;
