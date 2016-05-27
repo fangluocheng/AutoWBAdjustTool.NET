@@ -54,6 +54,7 @@
             this.comboBoxBrand.Name = "comboBoxBrand";
             this.comboBoxBrand.Size = new System.Drawing.Size(65, 20);
             this.comboBoxBrand.TabIndex = 5;
+            this.comboBoxBrand.SelectedIndexChanged += new System.EventHandler(this.comboBoxBrand_SelectedIndexChanged);
             // 
             // comboBoxModel
             // 
@@ -101,6 +102,7 @@
             this.Name = "FormSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSplash";
+            this.Load += new System.EventHandler(this.FormSplash_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 

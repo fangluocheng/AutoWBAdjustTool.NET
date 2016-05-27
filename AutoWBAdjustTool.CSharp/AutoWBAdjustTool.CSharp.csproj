@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigXmlHandler.cs" />
     <Compile Include="DotControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -156,6 +157,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CANTV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Haier.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

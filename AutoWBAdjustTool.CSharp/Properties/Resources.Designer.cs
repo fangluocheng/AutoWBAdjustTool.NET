@@ -61,6 +61,16 @@ namespace AutoWBAdjustTool.CSharp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CANTV {
+            get {
+                object obj = ResourceManager.GetObject("CANTV", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 333.
         /// </summary>
         internal static string FieldMeasureText {
@@ -75,6 +85,16 @@ namespace AutoWBAdjustTool.CSharp.Properties {
         internal static string FieldSeparator {
             get {
                 return ResourceManager.GetString("FieldSeparator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Haier {
+            get {
+                object obj = ResourceManager.GetObject("Haier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
