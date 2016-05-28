@@ -155,6 +155,12 @@
             // comboBoxBaudRate
             // 
             this.comboBoxBaudRate.FormattingEnabled = true;
+            this.comboBoxBaudRate.Items.AddRange(new object[] {
+            "9600",
+            "19200",
+            "38400",
+            "57600",
+            "115200"});
             this.comboBoxBaudRate.Location = new System.Drawing.Point(59, 35);
             this.comboBoxBaudRate.Name = "comboBoxBaudRate";
             this.comboBoxBaudRate.Size = new System.Drawing.Size(80, 20);
@@ -171,6 +177,7 @@
             // 
             // comboBoxComId
             // 
+            this.comboBoxComId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxComId.FormattingEnabled = true;
             this.comboBoxComId.Location = new System.Drawing.Point(59, 9);
             this.comboBoxComId.Name = "comboBoxComId";
@@ -220,7 +227,16 @@
             // 
             // comboBoxI2cClockRate
             // 
+            this.comboBoxI2cClockRate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxI2cClockRate.FormattingEnabled = true;
+            this.comboBoxI2cClockRate.Items.AddRange(new object[] {
+            "25KHz",
+            "50KHz",
+            "100KHz",
+            "200KHz",
+            "300KHz",
+            "400KHz",
+            "500KHz"});
             this.comboBoxI2cClockRate.Location = new System.Drawing.Point(83, 9);
             this.comboBoxI2cClockRate.Name = "comboBoxI2cClockRate";
             this.comboBoxI2cClockRate.Size = new System.Drawing.Size(80, 20);

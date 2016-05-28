@@ -32,6 +32,11 @@ namespace AutoWBAdjustTool.CSharp
             return config.Descendants(node).Attributes(attribute).First().Value;
         }
 
+        public static string GetAttributeValueByNode(string node1, string node2, string attribute)
+        {
+            return config.Descendants(node1).Descendants(node2).Attributes(attribute).First().Value;
+        }
+
         public static IEnumerable<string> GetBrandList()
         {
             return from item in config.Descendants("products").Descendants("brand").Attributes()

@@ -4,7 +4,7 @@
   <tvModel>X65</tvModel>
   <tvInputSrc>HDMI1</tvInputSrc>
   <tvBarcodeLen>19</tvBarcodeLen>
-  <communication mode="SerialPort">
+  <communication mode="serialPort">
     <serialPort baud="115200" id="COM1" />
     <network ipAddr="192.168.1.11" />
     <i2c clockRate="50KHz" />
