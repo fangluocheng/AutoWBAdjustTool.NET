@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxInputSrc = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxBarcodeLen = new System.Windows.Forms.TextBox();
+            this.textBoxTvBarcodeLen = new System.Windows.Forms.TextBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxComMode = new System.Windows.Forms.ComboBox();
@@ -43,11 +43,11 @@
             this.comboBoxComId = new System.Windows.Forms.ComboBox();
             this.labelComId = new System.Windows.Forms.Label();
             this.tabPageNetwork = new System.Windows.Forms.TabPage();
-            this.ipAddressControl1 = new AutoWBAdjustTool.CSharp.IPAddressControl();
             this.labelIpAddr = new System.Windows.Forms.Label();
             this.tabPageI2c = new System.Windows.Forms.TabPage();
             this.comboBoxI2cClockRate = new System.Windows.Forms.ComboBox();
             this.labelI2cClockRate = new System.Windows.Forms.Label();
+            this.ipAddressControl1 = new AutoWBAdjustTool.CSharp.IPAddressControl();
             this.tabControl1.SuspendLayout();
             this.tabPageSerialPort.SuspendLayout();
             this.tabPageNetwork.SuspendLayout();
@@ -65,12 +65,18 @@
             // 
             // comboBoxInputSrc
             // 
+            this.comboBoxInputSrc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxInputSrc.FormattingEnabled = true;
+            this.comboBoxInputSrc.Items.AddRange(new object[] {
+            "HDMI1",
+            "HDMI2",
+            "HDMI3",
+            "AV1",
+            "YPbPr1"});
             this.comboBoxInputSrc.Location = new System.Drawing.Point(71, 12);
             this.comboBoxInputSrc.Name = "comboBoxInputSrc";
             this.comboBoxInputSrc.Size = new System.Drawing.Size(56, 20);
             this.comboBoxInputSrc.TabIndex = 1;
-            this.comboBoxInputSrc.Text = "HDMI3";
             // 
             // label2
             // 
@@ -81,12 +87,13 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "整机条码长度";
             // 
-            // textBoxBarcodeLen
+            // textBoxTvBarcodeLen
             // 
-            this.textBoxBarcodeLen.Location = new System.Drawing.Point(237, 11);
-            this.textBoxBarcodeLen.Name = "textBoxBarcodeLen";
-            this.textBoxBarcodeLen.Size = new System.Drawing.Size(35, 21);
-            this.textBoxBarcodeLen.TabIndex = 3;
+            this.textBoxTvBarcodeLen.Location = new System.Drawing.Point(237, 11);
+            this.textBoxTvBarcodeLen.Name = "textBoxTvBarcodeLen";
+            this.textBoxTvBarcodeLen.Size = new System.Drawing.Size(35, 21);
+            this.textBoxTvBarcodeLen.TabIndex = 3;
+            this.textBoxTvBarcodeLen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonSave
             // 
@@ -108,6 +115,7 @@
             // 
             // comboBoxComMode
             // 
+            this.comboBoxComMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxComMode.FormattingEnabled = true;
             this.comboBoxComMode.Items.AddRange(new object[] {
             "串口",
@@ -117,6 +125,7 @@
             this.comboBoxComMode.Name = "comboBoxComMode";
             this.comboBoxComMode.Size = new System.Drawing.Size(80, 20);
             this.comboBoxComMode.TabIndex = 6;
+            this.comboBoxComMode.SelectedIndexChanged += new System.EventHandler(this.comboBoxComMode_SelectedIndexChanged);
             // 
             // tabControl1
             // 
@@ -189,21 +198,6 @@
             this.tabPageNetwork.Text = "网口设置";
             this.tabPageNetwork.UseVisualStyleBackColor = true;
             // 
-            // ipAddressControl1
-            // 
-            this.ipAddressControl1.AllowInternalTab = false;
-            this.ipAddressControl1.AutoHeight = true;
-            this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
-            this.ipAddressControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ipAddressControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.ipAddressControl1.Location = new System.Drawing.Point(107, 6);
-            this.ipAddressControl1.MinimumSize = new System.Drawing.Size(96, 21);
-            this.ipAddressControl1.Name = "ipAddressControl1";
-            this.ipAddressControl1.ReadOnly = false;
-            this.ipAddressControl1.Size = new System.Drawing.Size(128, 21);
-            this.ipAddressControl1.TabIndex = 10;
-            this.ipAddressControl1.Text = "...";
-            // 
             // labelIpAddr
             // 
             this.labelIpAddr.AutoSize = true;
@@ -241,6 +235,21 @@
             this.labelI2cClockRate.TabIndex = 10;
             this.labelI2cClockRate.Text = "Clock Rate";
             // 
+            // ipAddressControl1
+            // 
+            this.ipAddressControl1.AllowInternalTab = false;
+            this.ipAddressControl1.AutoHeight = true;
+            this.ipAddressControl1.BackColor = System.Drawing.SystemColors.Window;
+            this.ipAddressControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ipAddressControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ipAddressControl1.Location = new System.Drawing.Point(107, 6);
+            this.ipAddressControl1.MinimumSize = new System.Drawing.Size(96, 21);
+            this.ipAddressControl1.Name = "ipAddressControl1";
+            this.ipAddressControl1.ReadOnly = false;
+            this.ipAddressControl1.Size = new System.Drawing.Size(128, 21);
+            this.ipAddressControl1.TabIndex = 10;
+            this.ipAddressControl1.Text = "...";
+            // 
             // FormCommonSetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -250,7 +259,7 @@
             this.Controls.Add(this.comboBoxComMode);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.textBoxBarcodeLen);
+            this.Controls.Add(this.textBoxTvBarcodeLen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBoxInputSrc);
             this.Controls.Add(this.label1);
@@ -258,6 +267,7 @@
             this.Name = "FormCommonSetting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "通用设置";
+            this.Load += new System.EventHandler(this.FormCommonSetting_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageSerialPort.ResumeLayout(false);
             this.tabPageSerialPort.PerformLayout();
@@ -275,7 +285,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBoxInputSrc;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxBarcodeLen;
+        private System.Windows.Forms.TextBox textBoxTvBarcodeLen;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBoxComMode;

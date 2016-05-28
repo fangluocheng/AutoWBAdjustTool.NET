@@ -9,9 +9,9 @@ namespace AutoWBAdjustTool.CSharp
 {
     public static class ConfigXmlHandler
     {
-        private static string xmlFileName = @".\config.xml";
+        private const string xmlFileName = @".\config.xml";
         private static XDocument config = XDocument.Load(xmlFileName);
-
+        
         public static void SaveConfigXml()
         {
             config.Save(xmlFileName);
@@ -25,6 +25,11 @@ namespace AutoWBAdjustTool.CSharp
         public static void SetNodeValue(string node, string value)
         {
             config.Descendants(node).First().SetValue(value);
+        }
+
+        public static string GetAttributeValueByNode(string node, string attribute)
+        {
+            return config.Descendants(node).Attributes(attribute).First().Value;
         }
 
         public static IEnumerable<string> GetBrandList()

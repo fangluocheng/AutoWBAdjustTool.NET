@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OutputLog.cs" />
+    <Compile Include="PublicStruct.cs" />
     <Compile Include="ConfigXmlHandler.cs" />
     <Compile Include="DotControl.cs">
       <SubType>Component</SubType>
