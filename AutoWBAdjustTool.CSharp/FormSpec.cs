@@ -21,6 +21,7 @@ namespace AutoWBAdjustTool.CSharp
 
         private void FormSpec_Load(object sender, EventArgs e)
         {
+            // Color Temperature
             if (ConfigXmlHandler.GetAttributeValueByNode("adjustOffset", "enable").ToLower() == "true")
                 checkBoxAdjustOffset.Checked = true;
             else
@@ -82,6 +83,40 @@ namespace AutoWBAdjustTool.CSharp
             textBoxMagicValGainy.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "magicValueGain", "y");
             textBoxMagicValOffsetx.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "magicValueOffset", "x");
             textBoxMagicValOffsety.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "magicValueOffset", "y");
+
+            // RGB Preset
+            textBoxPreGainCoolR.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "cool", "r");
+            textBoxPreGainCoolG.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "cool", "g");
+            textBoxPreGainCoolB.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "cool", "b");
+
+            textBoxPreGainStandardR.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "standard", "r");
+            textBoxPreGainStandardG.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "standard", "g");
+            textBoxPreGainStandardB.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "standard", "b");
+
+            textBoxPreGainWarmR.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "warm", "r");
+            textBoxPreGainWarmG.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "warm", "g");
+            textBoxPreGainWarmB.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "warm", "b");
+
+            textBoxRgbGainMax.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "max");
+            textBoxRgbGainMin.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "min");
+
+            textBoxPreOffsetCoolR.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "cool", "r");
+            textBoxPreOffsetCoolG.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "cool", "g");
+            textBoxPreOffsetCoolB.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "cool", "b");
+
+            textBoxPreOffsetStandardR.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "standard", "r");
+            textBoxPreOffsetStandardG.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "standard", "g");
+            textBoxPreOffsetStandardB.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "standard", "b");
+
+            textBoxPreOffsetWarmR.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "warm", "r");
+            textBoxPreOffsetWarmG.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "warm", "g");
+            textBoxPreOffsetWarmB.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "warm", "b");
+
+            textBoxRgbOffsetMax.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "max");
+            textBoxRgbOffsetMin.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "min");
+
+            // Lv Spec
+            textBoxLvSpec.Text = ConfigXmlHandler.GetNodeValueByBrandAndModel(brandName, modelName, "LvSpec");
         }
 
         private void checkBoxCool_CheckedChanged(object sender, EventArgs e)

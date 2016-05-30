@@ -36,11 +36,27 @@ namespace AutoWBAdjustTool.CSharp
                     select c.Value).First();
         }
 
+        public static string GetNodeValueByBrandAndModel(string brand, string model, string node)
+        {
+            return (from c in config.Descendants(node)
+                    where (c.Parent.Parent.Attribute("name").Value == brand)
+                    && (c.Parent.Attribute("name").Value == model)
+                    select c.Value).First();
+        }
+
         public static string GetNodeValueByBrandAndModel(string brand, string model, string node1, string node2)
         {
             return (from c in config.Descendants(node1).Descendants(node2)
                     where (c.Parent.Parent.Parent.Attribute("name").Value == brand)
                     && (c.Parent.Parent.Attribute("name").Value == model)
+                    select c.Value).First();
+        }
+
+        public static string GetNodeValueByBrandAndModel(string brand, string model, string node1, string node2, string node3)
+        {
+            return (from c in config.Descendants(node1).Descendants(node2).Descendants(node3)
+                    where (c.Parent.Parent.Parent.Parent.Attribute("name").Value == brand)
+                    && (c.Parent.Parent.Parent.Attribute("name").Value == model)
                     select c.Value).First();
         }
 

@@ -63,50 +63,50 @@
             this.checkBoxStandard = new System.Windows.Forms.CheckBox();
             this.checkBoxCool = new System.Windows.Forms.CheckBox();
             this.tabPageRgb = new System.Windows.Forms.TabPage();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBoxRgbOffsetMin = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.textBoxRgbOffsetMax = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.textBoxRgbGainMin = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBoxRgbGainMax = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetWarmB = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetWarmG = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetWarmR = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetStandardB = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetStandardG = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetStandardR = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetCoolB = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetCoolG = new System.Windows.Forms.TextBox();
+            this.textBoxPreOffsetCoolR = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainWarmB = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainWarmG = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainWarmR = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainStandardB = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainStandardG = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainStandardR = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainCoolB = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainCoolG = new System.Windows.Forms.TextBox();
+            this.textBoxPreGainCoolR = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPageLv = new System.Windows.Forms.TabPage();
@@ -458,13 +458,13 @@
             // 
             // tabPageRgb
             // 
-            this.tabPageRgb.Controls.Add(this.textBox33);
+            this.tabPageRgb.Controls.Add(this.textBoxRgbOffsetMin);
             this.tabPageRgb.Controls.Add(this.label35);
-            this.tabPageRgb.Controls.Add(this.textBox34);
+            this.tabPageRgb.Controls.Add(this.textBoxRgbOffsetMax);
             this.tabPageRgb.Controls.Add(this.label36);
-            this.tabPageRgb.Controls.Add(this.textBox32);
+            this.tabPageRgb.Controls.Add(this.textBoxRgbGainMin);
             this.tabPageRgb.Controls.Add(this.label34);
-            this.tabPageRgb.Controls.Add(this.textBox31);
+            this.tabPageRgb.Controls.Add(this.textBoxRgbGainMax);
             this.tabPageRgb.Controls.Add(this.label33);
             this.tabPageRgb.Controls.Add(this.groupBox3);
             this.tabPageRgb.Controls.Add(this.groupBox2);
@@ -476,13 +476,13 @@
             this.tabPageRgb.Text = "RGB 预设值";
             this.tabPageRgb.UseVisualStyleBackColor = true;
             // 
-            // textBox33
+            // textBoxRgbOffsetMin
             // 
-            this.textBox33.Location = new System.Drawing.Point(208, 251);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(30, 21);
-            this.textBox33.TabIndex = 102;
-            this.textBox33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxRgbOffsetMin.Location = new System.Drawing.Point(208, 251);
+            this.textBoxRgbOffsetMin.Name = "textBoxRgbOffsetMin";
+            this.textBoxRgbOffsetMin.Size = new System.Drawing.Size(30, 21);
+            this.textBoxRgbOffsetMin.TabIndex = 102;
+            this.textBoxRgbOffsetMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label35
             // 
@@ -493,13 +493,13 @@
             this.label35.TabIndex = 101;
             this.label35.Text = "最小值";
             // 
-            // textBox34
+            // textBoxRgbOffsetMax
             // 
-            this.textBox34.Location = new System.Drawing.Point(125, 251);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(30, 21);
-            this.textBox34.TabIndex = 100;
-            this.textBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxRgbOffsetMax.Location = new System.Drawing.Point(125, 251);
+            this.textBoxRgbOffsetMax.Name = "textBoxRgbOffsetMax";
+            this.textBoxRgbOffsetMax.Size = new System.Drawing.Size(30, 21);
+            this.textBoxRgbOffsetMax.TabIndex = 100;
+            this.textBoxRgbOffsetMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label36
             // 
@@ -510,13 +510,13 @@
             this.label36.TabIndex = 99;
             this.label36.Text = "Offset RGB 最大值";
             // 
-            // textBox32
+            // textBoxRgbGainMin
             // 
-            this.textBox32.Location = new System.Drawing.Point(208, 115);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(30, 21);
-            this.textBox32.TabIndex = 98;
-            this.textBox32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxRgbGainMin.Location = new System.Drawing.Point(208, 115);
+            this.textBoxRgbGainMin.Name = "textBoxRgbGainMin";
+            this.textBoxRgbGainMin.Size = new System.Drawing.Size(30, 21);
+            this.textBoxRgbGainMin.TabIndex = 98;
+            this.textBoxRgbGainMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label34
             // 
@@ -527,13 +527,13 @@
             this.label34.TabIndex = 97;
             this.label34.Text = "最小值";
             // 
-            // textBox31
+            // textBoxRgbGainMax
             // 
-            this.textBox31.Location = new System.Drawing.Point(125, 115);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(30, 21);
-            this.textBox31.TabIndex = 96;
-            this.textBox31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxRgbGainMax.Location = new System.Drawing.Point(125, 115);
+            this.textBoxRgbGainMax.Name = "textBoxRgbGainMax";
+            this.textBoxRgbGainMax.Size = new System.Drawing.Size(30, 21);
+            this.textBoxRgbGainMax.TabIndex = 96;
+            this.textBoxRgbGainMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label33
             // 
@@ -546,22 +546,22 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox19);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetWarmB);
             this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.textBox20);
-            this.groupBox3.Controls.Add(this.textBox21);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetWarmG);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetWarmR);
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Controls.Add(this.label21);
-            this.groupBox3.Controls.Add(this.textBox22);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetStandardB);
             this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.textBox26);
-            this.groupBox3.Controls.Add(this.textBox27);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetStandardG);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetStandardR);
             this.groupBox3.Controls.Add(this.label28);
             this.groupBox3.Controls.Add(this.label29);
-            this.groupBox3.Controls.Add(this.textBox28);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetCoolB);
             this.groupBox3.Controls.Add(this.label30);
-            this.groupBox3.Controls.Add(this.textBox29);
-            this.groupBox3.Controls.Add(this.textBox30);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetCoolG);
+            this.groupBox3.Controls.Add(this.textBoxPreOffsetCoolR);
             this.groupBox3.Controls.Add(this.label31);
             this.groupBox3.Controls.Add(this.label32);
             this.groupBox3.Location = new System.Drawing.Point(6, 142);
@@ -571,14 +571,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Offset 预设值";
             // 
-            // textBox19
+            // textBoxPreOffsetWarmB
             // 
-            this.textBox19.Location = new System.Drawing.Point(192, 74);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(30, 21);
-            this.textBox19.TabIndex = 98;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetWarmB.Location = new System.Drawing.Point(192, 74);
+            this.textBoxPreOffsetWarmB.Name = "textBoxPreOffsetWarmB";
+            this.textBoxPreOffsetWarmB.ReadOnly = true;
+            this.textBoxPreOffsetWarmB.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetWarmB.TabIndex = 98;
+            this.textBoxPreOffsetWarmB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label19
             // 
@@ -589,23 +589,23 @@
             this.label19.TabIndex = 97;
             this.label19.Text = "B";
             // 
-            // textBox20
+            // textBoxPreOffsetWarmG
             // 
-            this.textBox20.Location = new System.Drawing.Point(139, 74);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(30, 21);
-            this.textBox20.TabIndex = 96;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetWarmG.Location = new System.Drawing.Point(139, 74);
+            this.textBoxPreOffsetWarmG.Name = "textBoxPreOffsetWarmG";
+            this.textBoxPreOffsetWarmG.ReadOnly = true;
+            this.textBoxPreOffsetWarmG.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetWarmG.TabIndex = 96;
+            this.textBoxPreOffsetWarmG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox21
+            // textBoxPreOffsetWarmR
             // 
-            this.textBox21.Location = new System.Drawing.Point(86, 74);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(30, 21);
-            this.textBox21.TabIndex = 95;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetWarmR.Location = new System.Drawing.Point(86, 74);
+            this.textBoxPreOffsetWarmR.Name = "textBoxPreOffsetWarmR";
+            this.textBoxPreOffsetWarmR.ReadOnly = true;
+            this.textBoxPreOffsetWarmR.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetWarmR.TabIndex = 95;
+            this.textBoxPreOffsetWarmR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label20
             // 
@@ -625,14 +625,14 @@
             this.label21.TabIndex = 93;
             this.label21.Text = "Warm     R";
             // 
-            // textBox22
+            // textBoxPreOffsetStandardB
             // 
-            this.textBox22.Location = new System.Drawing.Point(192, 47);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
-            this.textBox22.Size = new System.Drawing.Size(30, 21);
-            this.textBox22.TabIndex = 92;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetStandardB.Location = new System.Drawing.Point(192, 47);
+            this.textBoxPreOffsetStandardB.Name = "textBoxPreOffsetStandardB";
+            this.textBoxPreOffsetStandardB.ReadOnly = true;
+            this.textBoxPreOffsetStandardB.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetStandardB.TabIndex = 92;
+            this.textBoxPreOffsetStandardB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label22
             // 
@@ -643,23 +643,23 @@
             this.label22.TabIndex = 91;
             this.label22.Text = "B";
             // 
-            // textBox26
+            // textBoxPreOffsetStandardG
             // 
-            this.textBox26.Location = new System.Drawing.Point(139, 47);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.ReadOnly = true;
-            this.textBox26.Size = new System.Drawing.Size(30, 21);
-            this.textBox26.TabIndex = 90;
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetStandardG.Location = new System.Drawing.Point(139, 47);
+            this.textBoxPreOffsetStandardG.Name = "textBoxPreOffsetStandardG";
+            this.textBoxPreOffsetStandardG.ReadOnly = true;
+            this.textBoxPreOffsetStandardG.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetStandardG.TabIndex = 90;
+            this.textBoxPreOffsetStandardG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox27
+            // textBoxPreOffsetStandardR
             // 
-            this.textBox27.Location = new System.Drawing.Point(86, 47);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.ReadOnly = true;
-            this.textBox27.Size = new System.Drawing.Size(30, 21);
-            this.textBox27.TabIndex = 89;
-            this.textBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetStandardR.Location = new System.Drawing.Point(86, 47);
+            this.textBoxPreOffsetStandardR.Name = "textBoxPreOffsetStandardR";
+            this.textBoxPreOffsetStandardR.ReadOnly = true;
+            this.textBoxPreOffsetStandardR.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetStandardR.TabIndex = 89;
+            this.textBoxPreOffsetStandardR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label28
             // 
@@ -679,14 +679,14 @@
             this.label29.TabIndex = 87;
             this.label29.Text = "Standard R";
             // 
-            // textBox28
+            // textBoxPreOffsetCoolB
             // 
-            this.textBox28.Location = new System.Drawing.Point(192, 20);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.ReadOnly = true;
-            this.textBox28.Size = new System.Drawing.Size(30, 21);
-            this.textBox28.TabIndex = 86;
-            this.textBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetCoolB.Location = new System.Drawing.Point(192, 20);
+            this.textBoxPreOffsetCoolB.Name = "textBoxPreOffsetCoolB";
+            this.textBoxPreOffsetCoolB.ReadOnly = true;
+            this.textBoxPreOffsetCoolB.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetCoolB.TabIndex = 86;
+            this.textBoxPreOffsetCoolB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label30
             // 
@@ -697,23 +697,23 @@
             this.label30.TabIndex = 85;
             this.label30.Text = "B";
             // 
-            // textBox29
+            // textBoxPreOffsetCoolG
             // 
-            this.textBox29.Location = new System.Drawing.Point(139, 20);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(30, 21);
-            this.textBox29.TabIndex = 84;
-            this.textBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetCoolG.Location = new System.Drawing.Point(139, 20);
+            this.textBoxPreOffsetCoolG.Name = "textBoxPreOffsetCoolG";
+            this.textBoxPreOffsetCoolG.ReadOnly = true;
+            this.textBoxPreOffsetCoolG.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetCoolG.TabIndex = 84;
+            this.textBoxPreOffsetCoolG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox30
+            // textBoxPreOffsetCoolR
             // 
-            this.textBox30.Location = new System.Drawing.Point(86, 20);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(30, 21);
-            this.textBox30.TabIndex = 83;
-            this.textBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreOffsetCoolR.Location = new System.Drawing.Point(86, 20);
+            this.textBoxPreOffsetCoolR.Name = "textBoxPreOffsetCoolR";
+            this.textBoxPreOffsetCoolR.ReadOnly = true;
+            this.textBoxPreOffsetCoolR.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreOffsetCoolR.TabIndex = 83;
+            this.textBoxPreOffsetCoolR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label31
             // 
@@ -735,22 +735,22 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox23);
+            this.groupBox2.Controls.Add(this.textBoxPreGainWarmB);
             this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.textBox24);
-            this.groupBox2.Controls.Add(this.textBox25);
+            this.groupBox2.Controls.Add(this.textBoxPreGainWarmG);
+            this.groupBox2.Controls.Add(this.textBoxPreGainWarmR);
             this.groupBox2.Controls.Add(this.label26);
             this.groupBox2.Controls.Add(this.label27);
-            this.groupBox2.Controls.Add(this.textBox16);
+            this.groupBox2.Controls.Add(this.textBoxPreGainStandardB);
             this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.textBox17);
-            this.groupBox2.Controls.Add(this.textBox18);
+            this.groupBox2.Controls.Add(this.textBoxPreGainStandardG);
+            this.groupBox2.Controls.Add(this.textBoxPreGainStandardR);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.textBox15);
+            this.groupBox2.Controls.Add(this.textBoxPreGainCoolB);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox14);
+            this.groupBox2.Controls.Add(this.textBoxPreGainCoolG);
+            this.groupBox2.Controls.Add(this.textBoxPreGainCoolR);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Location = new System.Drawing.Point(6, 6);
@@ -760,14 +760,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Gain 预设值";
             // 
-            // textBox23
+            // textBoxPreGainWarmB
             // 
-            this.textBox23.Location = new System.Drawing.Point(192, 74);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(30, 21);
-            this.textBox23.TabIndex = 98;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainWarmB.Location = new System.Drawing.Point(192, 74);
+            this.textBoxPreGainWarmB.Name = "textBoxPreGainWarmB";
+            this.textBoxPreGainWarmB.ReadOnly = true;
+            this.textBoxPreGainWarmB.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainWarmB.TabIndex = 98;
+            this.textBoxPreGainWarmB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label25
             // 
@@ -778,23 +778,23 @@
             this.label25.TabIndex = 97;
             this.label25.Text = "B";
             // 
-            // textBox24
+            // textBoxPreGainWarmG
             // 
-            this.textBox24.Location = new System.Drawing.Point(139, 74);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(30, 21);
-            this.textBox24.TabIndex = 96;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainWarmG.Location = new System.Drawing.Point(139, 74);
+            this.textBoxPreGainWarmG.Name = "textBoxPreGainWarmG";
+            this.textBoxPreGainWarmG.ReadOnly = true;
+            this.textBoxPreGainWarmG.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainWarmG.TabIndex = 96;
+            this.textBoxPreGainWarmG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox25
+            // textBoxPreGainWarmR
             // 
-            this.textBox25.Location = new System.Drawing.Point(86, 74);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(30, 21);
-            this.textBox25.TabIndex = 95;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainWarmR.Location = new System.Drawing.Point(86, 74);
+            this.textBoxPreGainWarmR.Name = "textBoxPreGainWarmR";
+            this.textBoxPreGainWarmR.ReadOnly = true;
+            this.textBoxPreGainWarmR.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainWarmR.TabIndex = 95;
+            this.textBoxPreGainWarmR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label26
             // 
@@ -814,14 +814,14 @@
             this.label27.TabIndex = 93;
             this.label27.Text = "Warm     R";
             // 
-            // textBox16
+            // textBoxPreGainStandardB
             // 
-            this.textBox16.Location = new System.Drawing.Point(192, 47);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(30, 21);
-            this.textBox16.TabIndex = 92;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainStandardB.Location = new System.Drawing.Point(192, 47);
+            this.textBoxPreGainStandardB.Name = "textBoxPreGainStandardB";
+            this.textBoxPreGainStandardB.ReadOnly = true;
+            this.textBoxPreGainStandardB.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainStandardB.TabIndex = 92;
+            this.textBoxPreGainStandardB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
             // 
@@ -832,23 +832,23 @@
             this.label16.TabIndex = 91;
             this.label16.Text = "B";
             // 
-            // textBox17
+            // textBoxPreGainStandardG
             // 
-            this.textBox17.Location = new System.Drawing.Point(139, 47);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(30, 21);
-            this.textBox17.TabIndex = 90;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainStandardG.Location = new System.Drawing.Point(139, 47);
+            this.textBoxPreGainStandardG.Name = "textBoxPreGainStandardG";
+            this.textBoxPreGainStandardG.ReadOnly = true;
+            this.textBoxPreGainStandardG.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainStandardG.TabIndex = 90;
+            this.textBoxPreGainStandardG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox18
+            // textBoxPreGainStandardR
             // 
-            this.textBox18.Location = new System.Drawing.Point(86, 47);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(30, 21);
-            this.textBox18.TabIndex = 89;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainStandardR.Location = new System.Drawing.Point(86, 47);
+            this.textBoxPreGainStandardR.Name = "textBoxPreGainStandardR";
+            this.textBoxPreGainStandardR.ReadOnly = true;
+            this.textBoxPreGainStandardR.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainStandardR.TabIndex = 89;
+            this.textBoxPreGainStandardR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label17
             // 
@@ -868,14 +868,14 @@
             this.label18.TabIndex = 87;
             this.label18.Text = "Standard R";
             // 
-            // textBox15
+            // textBoxPreGainCoolB
             // 
-            this.textBox15.Location = new System.Drawing.Point(192, 20);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(30, 21);
-            this.textBox15.TabIndex = 86;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainCoolB.Location = new System.Drawing.Point(192, 20);
+            this.textBoxPreGainCoolB.Name = "textBoxPreGainCoolB";
+            this.textBoxPreGainCoolB.ReadOnly = true;
+            this.textBoxPreGainCoolB.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainCoolB.TabIndex = 86;
+            this.textBoxPreGainCoolB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label15
             // 
@@ -886,23 +886,23 @@
             this.label15.TabIndex = 85;
             this.label15.Text = "B";
             // 
-            // textBox13
+            // textBoxPreGainCoolG
             // 
-            this.textBox13.Location = new System.Drawing.Point(139, 20);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(30, 21);
-            this.textBox13.TabIndex = 84;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainCoolG.Location = new System.Drawing.Point(139, 20);
+            this.textBoxPreGainCoolG.Name = "textBoxPreGainCoolG";
+            this.textBoxPreGainCoolG.ReadOnly = true;
+            this.textBoxPreGainCoolG.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainCoolG.TabIndex = 84;
+            this.textBoxPreGainCoolG.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox14
+            // textBoxPreGainCoolR
             // 
-            this.textBox14.Location = new System.Drawing.Point(86, 20);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(30, 21);
-            this.textBox14.TabIndex = 83;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPreGainCoolR.Location = new System.Drawing.Point(86, 20);
+            this.textBoxPreGainCoolR.Name = "textBoxPreGainCoolR";
+            this.textBoxPreGainCoolR.ReadOnly = true;
+            this.textBoxPreGainCoolR.Size = new System.Drawing.Size(30, 21);
+            this.textBoxPreGainCoolR.TabIndex = 83;
+            this.textBoxPreGainCoolR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label13
             // 
@@ -1027,50 +1027,50 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox textBoxLvSpec;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBoxPreGainWarmB;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox textBoxPreGainWarmG;
+        private System.Windows.Forms.TextBox textBoxPreGainWarmR;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBoxPreGainStandardB;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBoxPreGainStandardG;
+        private System.Windows.Forms.TextBox textBoxPreGainStandardR;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBoxPreGainCoolB;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBoxPreGainCoolG;
+        private System.Windows.Forms.TextBox textBoxPreGainCoolR;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBoxPreOffsetWarmB;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBoxPreOffsetWarmG;
+        private System.Windows.Forms.TextBox textBoxPreOffsetWarmR;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBoxPreOffsetStandardB;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox textBoxPreOffsetStandardG;
+        private System.Windows.Forms.TextBox textBoxPreOffsetStandardR;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox textBoxPreOffsetCoolB;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox textBoxPreOffsetCoolG;
+        private System.Windows.Forms.TextBox textBoxPreOffsetCoolR;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox textBoxRgbOffsetMin;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox textBoxRgbOffsetMax;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox textBoxRgbGainMin;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox textBoxRgbGainMax;
         private System.Windows.Forms.Label label33;
     }
 }
