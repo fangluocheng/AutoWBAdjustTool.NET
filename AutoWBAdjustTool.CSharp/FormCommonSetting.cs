@@ -31,6 +31,8 @@ namespace AutoWBAdjustTool.CSharp
             }
             comboBoxInputSrc.SelectedIndex = index;
 
+            textBoxTvBarcodeLen.Text = ConfigXmlHandler.GetNodeValue("tvBarcodeLen");
+
             foreach (string itemComMode in comModeList)
             {
                 if (itemComMode == ConfigXmlHandler.GetAttributeValueByNode("communication", "mode"))
@@ -38,9 +40,7 @@ namespace AutoWBAdjustTool.CSharp
                     index = comModeList.IndexOf(itemComMode);
                 }
             }
-            comboBoxComMode.SelectedIndex = index;
-
-            textBoxTvBarcodeLen.Text = ConfigXmlHandler.GetNodeValue("tvBarcodeLen");
+            comboBoxComMode.SelectedIndex = index;            
 
             // Serial Port
             string[] ports = SerialPort.GetPortNames();
@@ -77,6 +77,30 @@ namespace AutoWBAdjustTool.CSharp
         private void comboBoxComMode_SelectedIndexChanged(object sender, EventArgs e)
         {
             tabControl1.SelectedIndex = comboBoxComMode.SelectedIndex;
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            var comModeList = new List<string> { "serialPort", "network", "i2c" };
+
+            ConfigXmlHandler.SetNodeValue("tvInputSrc", comboBoxInputSrc.Text);
+            ConfigXmlHandler.SetNodeValue("tvBarcodeLen", textBoxTvBarcodeLen.Text);
+            ConfigXmlHandler.SetAttributeValueByNode("communication", "mode",
+                comModeList[comboBoxComMode.SelectedIndex]);
+            if (comboBoxComId.Text != "")
+            {
+                ConfigXmlHandler.SetAttributeValueByNode("communication", "serialPort",
+                    "id", comboBoxComId.Text);
+                ConfigXmlHandler.SetAttributeValueByNode("communication", "serialPort",
+                    "baud", comboBoxBaudRate.Text);
+            }
+            ConfigXmlHandler.SetAttributeValueByNode("communication", "network",
+                "ipAddr", ipAddressControl1.Text);
+            ConfigXmlHandler.SetAttributeValueByNode("communication", "i2c",
+                "clockRate", comboBoxI2cClockRate.Text);
+            ConfigXmlHandler.SaveConfigXml();
+
+            this.Hide();
         }
     }
 }

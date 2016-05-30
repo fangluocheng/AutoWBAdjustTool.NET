@@ -27,14 +27,24 @@ namespace AutoWBAdjustTool.CSharp
             config.Descendants(node).First().SetValue(value);
         }
 
-        public static string GetAttributeValueByNode(string node, string attribute)
+        public static string GetAttributeValueByNode(string node, string attributeValue)
         {
-            return config.Descendants(node).Attributes(attribute).First().Value;
+            return config.Descendants(node).Attributes(attributeValue).First().Value;
         }
 
-        public static string GetAttributeValueByNode(string node1, string node2, string attribute)
+        public static string GetAttributeValueByNode(string node1, string node2, string attributeValue)
         {
-            return config.Descendants(node1).Descendants(node2).Attributes(attribute).First().Value;
+            return config.Descendants(node1).Descendants(node2).Attributes(attributeValue).First().Value;
+        }
+
+        public static void SetAttributeValueByNode(string node, string attributeName, string attributeValue)
+        {
+            config.Descendants(node).First().SetAttributeValue(attributeName, attributeValue);
+        }
+
+        public static void SetAttributeValueByNode(string node1, string node2, string attributeName, string attributeValue)
+        {
+            config.Descendants(node1).Descendants(node2).First().SetAttributeValue(attributeName, attributeValue);
         }
 
         public static IEnumerable<string> GetBrandList()
