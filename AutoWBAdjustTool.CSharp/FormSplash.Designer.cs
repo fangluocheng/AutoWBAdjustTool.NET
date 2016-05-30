@@ -70,7 +70,7 @@
             this.buttonStart.Location = new System.Drawing.Point(168, 66);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
-            this.buttonStart.TabIndex = 7;
+            this.buttonStart.TabIndex = 0;
             this.buttonStart.Text = "开始（&S）";
             this.buttonStart.UseVisualStyleBackColor = true;
             this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);

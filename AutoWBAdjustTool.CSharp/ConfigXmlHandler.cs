@@ -22,6 +22,28 @@ namespace AutoWBAdjustTool.CSharp
             return config.Descendants(node).First().Value;
         }
 
+        public static string GetNodeValueByBrand(string brand, string node)
+        {
+            return (from c in config.Descendants(node)
+                    where c.Parent.Attribute("name").Value == brand
+                    select c.Value).First();
+        }
+
+        public static string GetNodeValueByBrand(string brand, string node1, string node2)
+        {
+            return (from c in config.Descendants(node1).Descendants(node2)
+                    where c.Parent.Parent.Attribute("name").Value == brand
+                    select c.Value).First();
+        }
+
+        public static string GetNodeValueByBrandAndModel(string brand, string model, string node1, string node2)
+        {
+            return (from c in config.Descendants(node1).Descendants(node2)
+                    where (c.Parent.Parent.Parent.Attribute("name").Value == brand)
+                    && (c.Parent.Parent.Attribute("name").Value == model)
+                    select c.Value).First();
+        }
+
         public static void SetNodeValue(string node, string value)
         {
             config.Descendants(node).First().SetValue(value);
@@ -36,6 +58,13 @@ namespace AutoWBAdjustTool.CSharp
         {
             return config.Descendants(node1).Descendants(node2).Attributes(attributeValue).First().Value;
         }
+
+        public static string GetAttributeValueByBrand(string brand, string node, string attributeValue)
+        {
+            return (from c in config.Descendants(node)
+                    where (c.Parent.Attribute("name").Value == brand)
+                    select c.Attributes(attributeValue).First().Value).First();
+        }        
 
         public static void SetAttributeValueByNode(string node, string attributeName, string attributeValue)
         {
