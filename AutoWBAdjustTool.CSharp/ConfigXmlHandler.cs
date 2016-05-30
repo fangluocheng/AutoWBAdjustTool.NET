@@ -65,6 +65,36 @@ namespace AutoWBAdjustTool.CSharp
             config.Descendants(node).First().SetValue(value);
         }
 
+        public static void SetNodeValueByBrand(string brand, string node, string value)
+        {
+            (from c in config.Descendants(node)
+             where c.Parent.Attribute("name").Value == brand
+             select c).First().SetValue(value);
+        }
+
+        public static void SetNodeValueByBrand(string brand, string node1, string node2, string value)
+        {
+            (from c in config.Descendants(node1).Descendants(node2)
+             where c.Parent.Parent.Attribute("name").Value == brand
+             select c).First().SetValue(value);
+        }
+
+        public static void SetNodeValueByBrandAndModel(string brand, string model, string node, string value)
+        {
+            (from c in config.Descendants(node)
+             where (c.Parent.Parent.Attribute("name").Value == brand)
+             && (c.Parent.Attribute("name").Value == model)
+             select c).First().SetValue(value);
+        }
+
+        public static void SetNodeValueByBrandAndModel(string brand, string model, string node1, string node2, string value)
+        {
+            (from c in config.Descendants(node1).Descendants(node2)
+             where (c.Parent.Parent.Parent.Attribute("name").Value == brand)
+             && (c.Parent.Parent.Attribute("name").Value == model)
+             select c).First().SetValue(value);
+        }
+
         public static string GetAttributeValueByNode(string node, string attributeValue)
         {
             return config.Descendants(node).Attributes(attributeValue).First().Value;
@@ -90,6 +120,13 @@ namespace AutoWBAdjustTool.CSharp
         public static void SetAttributeValueByNode(string node1, string node2, string attributeName, string attributeValue)
         {
             config.Descendants(node1).Descendants(node2).First().SetAttributeValue(attributeName, attributeValue);
+        }
+
+        public static void SetAttributeValueByBrand(string brand, string node, string attributeName, string attributeValue)
+        {
+            (from c in config.Descendants(node)
+             where (c.Parent.Attribute("name").Value == brand)
+             select c).First().SetAttributeValue(attributeName, attributeValue);
         }
 
         public static IEnumerable<string> GetBrandList()

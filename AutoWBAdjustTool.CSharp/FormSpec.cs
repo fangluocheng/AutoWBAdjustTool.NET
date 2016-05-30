@@ -160,5 +160,52 @@ namespace AutoWBAdjustTool.CSharp
                 textBoxWarmy.ReadOnly = true;
             }
         }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            if (checkBoxAdjustOffset.Checked)
+                ConfigXmlHandler.SetAttributeValueByNode("adjustOffset", "enable", "true");
+            else
+                ConfigXmlHandler.SetAttributeValueByNode("adjustOffset", "enable", "false");
+
+            if (checkBoxCheckColorTemp.Checked)
+                ConfigXmlHandler.SetAttributeValueByNode("checkColorTemp", "enable", "true");
+            else
+                ConfigXmlHandler.SetAttributeValueByNode("checkColorTemp", "enable", "false");
+
+            if (checkBoxCool.Checked == true)
+                ConfigXmlHandler.SetAttributeValueByBrand(brandName, "colorTempCool", "enable", "true");
+            else
+                ConfigXmlHandler.SetAttributeValueByBrand(brandName, "colorTempCool", "enable", "false");
+            ConfigXmlHandler.SetNodeValueByBrand(brandName, "colorTempCool", "x", textBoxCoolx.Text);
+            ConfigXmlHandler.SetNodeValueByBrand(brandName, "colorTempCool", "y", textBoxCooly.Text);
+
+            if (checkBoxStandard.Checked == true)
+                ConfigXmlHandler.SetAttributeValueByBrand(brandName, "colorTempStandard", "enable", "true");
+            else
+                ConfigXmlHandler.SetAttributeValueByBrand(brandName, "colorTempStandard", "enable", "false");
+            ConfigXmlHandler.SetNodeValueByBrand(brandName, "colorTempStandard", "x", textBoxStandardx.Text);
+            ConfigXmlHandler.SetNodeValueByBrand(brandName, "colorTempStandard", "y", textBoxStandardy.Text);
+
+            if (checkBoxWarm.Checked == true)
+                ConfigXmlHandler.SetAttributeValueByBrand(brandName, "colorTempWarm", "enable", "true");
+            else
+                ConfigXmlHandler.SetAttributeValueByBrand(brandName, "colorTempWarm", "enable", "false");
+            ConfigXmlHandler.SetNodeValueByBrand(brandName, "colorTempWarm", "x", textBoxWarmx.Text);
+            ConfigXmlHandler.SetNodeValueByBrand(brandName, "colorTempWarm", "y", textBoxWarmy.Text);
+
+            ConfigXmlHandler.SetNodeValueByBrand(brandName, "toleranceGain", textBoxTolGain.Text);
+            ConfigXmlHandler.SetNodeValueByBrand(brandName, "toleranceOffset", textBoxTolOffset.Text);
+
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "magicValueGain", "x", textBoxMagicValGainx.Text);
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "magicValueGain", "y", textBoxMagicValGainy.Text);
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "magicValueOffset", "x", textBoxMagicValOffsetx.Text);
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "magicValueOffset", "y", textBoxMagicValOffsety.Text);
+
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "LvSpec", textBoxLvSpec.Text);
+            ConfigXmlHandler.SaveConfigXml();
+
+            this.Hide();
+        }
     }
 }
