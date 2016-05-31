@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormColorAnalyzer));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageKM = new System.Windows.Forms.TabPage();
-            this.textBoxChannel = new System.Windows.Forms.TextBox();
+            this.textBoxCaChannel = new System.Windows.Forms.TextBox();
             this.labelChannel = new System.Windows.Forms.Label();
-            this.comboBoxModel = new System.Windows.Forms.ComboBox();
+            this.comboBoxCaModel = new System.Windows.Forms.ComboBox();
             this.labelModel = new System.Windows.Forms.Label();
             this.buttonSave = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
@@ -51,9 +51,9 @@
             // 
             // tabPageKM
             // 
-            this.tabPageKM.Controls.Add(this.textBoxChannel);
+            this.tabPageKM.Controls.Add(this.textBoxCaChannel);
             this.tabPageKM.Controls.Add(this.labelChannel);
-            this.tabPageKM.Controls.Add(this.comboBoxModel);
+            this.tabPageKM.Controls.Add(this.comboBoxCaModel);
             this.tabPageKM.Controls.Add(this.labelModel);
             this.tabPageKM.Location = new System.Drawing.Point(4, 22);
             this.tabPageKM.Name = "tabPageKM";
@@ -63,12 +63,12 @@
             this.tabPageKM.Text = "KONICA MINOLTA";
             this.tabPageKM.UseVisualStyleBackColor = true;
             // 
-            // textBoxChannel
+            // textBoxCaChannel
             // 
-            this.textBoxChannel.Location = new System.Drawing.Point(186, 10);
-            this.textBoxChannel.Name = "textBoxChannel";
-            this.textBoxChannel.Size = new System.Drawing.Size(40, 21);
-            this.textBoxChannel.TabIndex = 5;
+            this.textBoxCaChannel.Location = new System.Drawing.Point(186, 10);
+            this.textBoxCaChannel.Name = "textBoxCaChannel";
+            this.textBoxCaChannel.Size = new System.Drawing.Size(40, 21);
+            this.textBoxCaChannel.TabIndex = 5;
             // 
             // labelChannel
             // 
@@ -79,16 +79,17 @@
             this.labelChannel.TabIndex = 4;
             this.labelChannel.Text = "通道";
             // 
-            // comboBoxModel
+            // comboBoxCaModel
             // 
-            this.comboBoxModel.FormattingEnabled = true;
-            this.comboBoxModel.Items.AddRange(new object[] {
+            this.comboBoxCaModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCaModel.FormattingEnabled = true;
+            this.comboBoxCaModel.Items.AddRange(new object[] {
             "CA310",
             "CA210"});
-            this.comboBoxModel.Location = new System.Drawing.Point(52, 11);
-            this.comboBoxModel.Name = "comboBoxModel";
-            this.comboBoxModel.Size = new System.Drawing.Size(70, 20);
-            this.comboBoxModel.TabIndex = 3;
+            this.comboBoxCaModel.Location = new System.Drawing.Point(52, 11);
+            this.comboBoxCaModel.Name = "comboBoxCaModel";
+            this.comboBoxCaModel.Size = new System.Drawing.Size(70, 20);
+            this.comboBoxCaModel.TabIndex = 3;
             // 
             // labelModel
             // 
@@ -107,6 +108,7 @@
             this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "保存";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // FormColorAnalyzer
             // 
@@ -119,6 +121,7 @@
             this.Name = "FormColorAnalyzer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "色彩分析仪设置";
+            this.Load += new System.EventHandler(this.FormColorAnalyzer_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageKM.ResumeLayout(false);
             this.tabPageKM.PerformLayout();
@@ -131,9 +134,9 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageKM;
         private System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.ComboBox comboBoxModel;
+        private System.Windows.Forms.ComboBox comboBoxCaModel;
         private System.Windows.Forms.Label labelModel;
-        private System.Windows.Forms.TextBox textBoxChannel;
+        private System.Windows.Forms.TextBox textBoxCaChannel;
         private System.Windows.Forms.Label labelChannel;
     }
 }
