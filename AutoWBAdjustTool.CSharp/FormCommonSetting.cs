@@ -26,10 +26,9 @@ namespace AutoWBAdjustTool.CSharp
             {
                 if (itemInputSrc == ConfigXmlHandler.GetNodeValue("tvInputSrc"))
                 {
-                    index = comboBoxInputSrc.Items.IndexOf(itemInputSrc);
+                    comboBoxInputSrc.SelectedIndex = comboBoxInputSrc.Items.IndexOf(itemInputSrc);
                 }
             }
-            comboBoxInputSrc.SelectedIndex = index;
 
             textBoxTvBarcodeLen.Text = ConfigXmlHandler.GetNodeValue("tvBarcodeLen");
 
@@ -37,10 +36,9 @@ namespace AutoWBAdjustTool.CSharp
             {
                 if (itemComMode == ConfigXmlHandler.GetAttributeValueByNode("communication", "mode"))
                 {
-                    index = comModeList.IndexOf(itemComMode);
+                    comboBoxComMode.SelectedIndex = comModeList.IndexOf(itemComMode);
                 }
-            }
-            comboBoxComMode.SelectedIndex = index;            
+            }         
 
             // Serial Port
             string[] ports = SerialPort.GetPortNames();
@@ -68,10 +66,9 @@ namespace AutoWBAdjustTool.CSharp
             {
                 if (itemClockRate == ConfigXmlHandler.GetAttributeValueByNode("communication", "i2c", "clockRate"))
                 {
-                    index = comboBoxI2cClockRate.Items.IndexOf(itemClockRate);
+                    comboBoxI2cClockRate.SelectedIndex = comboBoxI2cClockRate.Items.IndexOf(itemClockRate);
                 }
             }
-            comboBoxI2cClockRate.SelectedIndex = index;
         }
 
         private void comboBoxComMode_SelectedIndexChanged(object sender, EventArgs e)

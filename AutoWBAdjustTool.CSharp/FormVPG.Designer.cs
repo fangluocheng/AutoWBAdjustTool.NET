@@ -33,14 +33,14 @@
             this.tabPageChroma = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxWhite = new System.Windows.Forms.TextBox();
-            this.textBox100IRE = new System.Windows.Forms.TextBox();
+            this.textBoxChromaWhite = new System.Windows.Forms.TextBox();
+            this.textBoxChroma100IRE = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxGrey = new System.Windows.Forms.TextBox();
+            this.textBoxChromaGray = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxTiming = new System.Windows.Forms.TextBox();
+            this.textBoxChromaTiming = new System.Windows.Forms.TextBox();
             this.labelTiming = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxChromaModel = new System.Windows.Forms.ComboBox();
             this.labelModel = new System.Windows.Forms.Label();
             this.buttonSave = new System.Windows.Forms.Button();
             this.tabControlVPG.SuspendLayout();
@@ -60,9 +60,9 @@
             // tabPageChroma
             // 
             this.tabPageChroma.Controls.Add(this.groupBox1);
-            this.tabPageChroma.Controls.Add(this.textBoxTiming);
+            this.tabPageChroma.Controls.Add(this.textBoxChromaTiming);
             this.tabPageChroma.Controls.Add(this.labelTiming);
-            this.tabPageChroma.Controls.Add(this.comboBox1);
+            this.tabPageChroma.Controls.Add(this.comboBoxChromaModel);
             this.tabPageChroma.Controls.Add(this.labelModel);
             this.tabPageChroma.Location = new System.Drawing.Point(4, 22);
             this.tabPageChroma.Name = "tabPageChroma";
@@ -75,10 +75,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBoxWhite);
-            this.groupBox1.Controls.Add(this.textBox100IRE);
+            this.groupBox1.Controls.Add(this.textBoxChromaWhite);
+            this.groupBox1.Controls.Add(this.textBoxChroma100IRE);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBoxGrey);
+            this.groupBox1.Controls.Add(this.textBoxChromaGray);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(11, 46);
             this.groupBox1.Name = "groupBox1";
@@ -96,21 +96,21 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "暗场";
             // 
-            // textBoxWhite
+            // textBoxChromaWhite
             // 
-            this.textBoxWhite.Location = new System.Drawing.Point(112, 14);
-            this.textBoxWhite.Name = "textBoxWhite";
-            this.textBoxWhite.Size = new System.Drawing.Size(28, 21);
-            this.textBoxWhite.TabIndex = 7;
-            this.textBoxWhite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxChromaWhite.Location = new System.Drawing.Point(112, 14);
+            this.textBoxChromaWhite.Name = "textBoxChromaWhite";
+            this.textBoxChromaWhite.Size = new System.Drawing.Size(28, 21);
+            this.textBoxChromaWhite.TabIndex = 7;
+            this.textBoxChromaWhite.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox100IRE
+            // textBoxChroma100IRE
             // 
-            this.textBox100IRE.Location = new System.Drawing.Point(192, 14);
-            this.textBox100IRE.Name = "textBox100IRE";
-            this.textBox100IRE.Size = new System.Drawing.Size(28, 21);
-            this.textBox100IRE.TabIndex = 9;
-            this.textBox100IRE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxChroma100IRE.Location = new System.Drawing.Point(192, 14);
+            this.textBoxChroma100IRE.Name = "textBoxChroma100IRE";
+            this.textBoxChroma100IRE.Size = new System.Drawing.Size(28, 21);
+            this.textBoxChroma100IRE.TabIndex = 9;
+            this.textBoxChroma100IRE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -121,13 +121,13 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "亮场";
             // 
-            // textBoxGrey
+            // textBoxChromaGray
             // 
-            this.textBoxGrey.Location = new System.Drawing.Point(41, 14);
-            this.textBoxGrey.Name = "textBoxGrey";
-            this.textBoxGrey.Size = new System.Drawing.Size(28, 21);
-            this.textBoxGrey.TabIndex = 5;
-            this.textBoxGrey.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxChromaGray.Location = new System.Drawing.Point(41, 14);
+            this.textBoxChromaGray.Name = "textBoxChromaGray";
+            this.textBoxChromaGray.Size = new System.Drawing.Size(28, 21);
+            this.textBoxChromaGray.TabIndex = 5;
+            this.textBoxChromaGray.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -138,13 +138,13 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "100IRE";
             // 
-            // textBoxTiming
+            // textBoxChromaTiming
             // 
-            this.textBoxTiming.Location = new System.Drawing.Point(203, 10);
-            this.textBoxTiming.Name = "textBoxTiming";
-            this.textBoxTiming.Size = new System.Drawing.Size(28, 21);
-            this.textBoxTiming.TabIndex = 3;
-            this.textBoxTiming.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxChromaTiming.Location = new System.Drawing.Point(203, 10);
+            this.textBoxChromaTiming.Name = "textBoxChromaTiming";
+            this.textBoxChromaTiming.Size = new System.Drawing.Size(28, 21);
+            this.textBoxChromaTiming.TabIndex = 3;
+            this.textBoxChromaTiming.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelTiming
             // 
@@ -155,10 +155,11 @@
             this.labelTiming.TabIndex = 2;
             this.labelTiming.Text = "Timing";
             // 
-            // comboBox1
+            // comboBoxChromaModel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxChromaModel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxChromaModel.FormattingEnabled = true;
+            this.comboBoxChromaModel.Items.AddRange(new object[] {
             "2401",
             "2402",
             "22293",
@@ -173,10 +174,10 @@
             "22294",
             "22294_A",
             "23294"});
-            this.comboBox1.Location = new System.Drawing.Point(52, 11);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(70, 20);
-            this.comboBox1.TabIndex = 1;
+            this.comboBoxChromaModel.Location = new System.Drawing.Point(52, 11);
+            this.comboBoxChromaModel.Name = "comboBoxChromaModel";
+            this.comboBoxChromaModel.Size = new System.Drawing.Size(70, 20);
+            this.comboBoxChromaModel.TabIndex = 1;
             // 
             // labelModel
             // 
@@ -225,15 +226,15 @@
         private System.Windows.Forms.TabPage tabPageChroma;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelModel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxChromaModel;
         private System.Windows.Forms.Label labelTiming;
-        private System.Windows.Forms.TextBox textBoxTiming;
+        private System.Windows.Forms.TextBox textBoxChromaTiming;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox100IRE;
+        private System.Windows.Forms.TextBox textBoxChroma100IRE;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxWhite;
+        private System.Windows.Forms.TextBox textBoxChromaWhite;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxGrey;
+        private System.Windows.Forms.TextBox textBoxChromaGray;
     }
 }
