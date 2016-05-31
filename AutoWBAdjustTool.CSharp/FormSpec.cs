@@ -202,6 +202,11 @@ namespace AutoWBAdjustTool.CSharp
             ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "magicValueOffset", "x", textBoxMagicValOffsetx.Text);
             ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "magicValueOffset", "y", textBoxMagicValOffsety.Text);
 
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "max", textBoxRgbGainMax.Text);
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetGain", "min", textBoxRgbGainMin.Text);
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "max", textBoxRgbOffsetMax.Text);
+            ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "rgbPresetOffset", "min", textBoxRgbOffsetMin.Text);
+
             ConfigXmlHandler.SetNodeValueByBrandAndModel(brandName, modelName, "LvSpec", textBoxLvSpec.Text);
             ConfigXmlHandler.SaveConfigXml();
 
