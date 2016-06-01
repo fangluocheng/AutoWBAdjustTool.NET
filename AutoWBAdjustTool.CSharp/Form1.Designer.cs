@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItemFunction = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemConnectCa = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemDisconnectCa = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemVPG = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemSpecSetting = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,12 +72,36 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemFunction,
             this.toolStripMenuItemSetting});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(634, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItemFunction
+            // 
+            this.toolStripMenuItemFunction.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemConnectCa,
+            this.toolStripMenuItemDisconnectCa});
+            this.toolStripMenuItemFunction.Name = "toolStripMenuItemFunction";
+            this.toolStripMenuItemFunction.Size = new System.Drawing.Size(44, 21);
+            this.toolStripMenuItemFunction.Text = "功能";
+            // 
+            // toolStripMenuItemConnectCa
+            // 
+            this.toolStripMenuItemConnectCa.Name = "toolStripMenuItemConnectCa";
+            this.toolStripMenuItemConnectCa.Size = new System.Drawing.Size(183, 22);
+            this.toolStripMenuItemConnectCa.Text = "连接 CA310/CA210";
+            this.toolStripMenuItemConnectCa.Click += new System.EventHandler(this.toolStripMenuItemConnectCa_Click);
+            // 
+            // toolStripMenuItemDisconnectCa
+            // 
+            this.toolStripMenuItemDisconnectCa.Name = "toolStripMenuItemDisconnectCa";
+            this.toolStripMenuItemDisconnectCa.Size = new System.Drawing.Size(183, 22);
+            this.toolStripMenuItemDisconnectCa.Text = "断开 CA310/CA210";
+            this.toolStripMenuItemDisconnectCa.Click += new System.EventHandler(this.toolStripMenuItemDisconnectCa_Click);
             // 
             // toolStripMenuItemSetting
             // 
@@ -407,6 +434,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "自动白平衡调整";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -452,6 +480,9 @@
         private System.Windows.Forms.Label labelSpecLv;
         private System.Windows.Forms.Label labelSpecy;
         private System.Windows.Forms.Label labelSpecx;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemFunction;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemConnectCa;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDisconnectCa;
     }
 }
 

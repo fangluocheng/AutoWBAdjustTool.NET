@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using CA200SRVRLib;
 
 namespace AutoWBAdjustTool.CSharp
 {
@@ -16,8 +17,40 @@ namespace AutoWBAdjustTool.CSharp
             InitializeComponent();
         }
 
+        private Ca200 objCa200;
+        private Ca objCa;
+        private Probe objProbe;
+        private Memory objMemory;
+        private bool caConnected, isMsr;
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            reconnectCa:
+            isMsr = false;
+            caConnected = false;
+            try
+            {
+                objCa200 = new Ca200();
+                objCa200.AutoConnect();
+                objCa = objCa200.SingleCa;
+                objProbe = objCa.SingleProbe;
+                objMemory = objCa.Memory;
+                caConnected = true;
+                Application.DoEvents();
+            }
+            catch(Exception)
+            {
+                if (MessageBox.Show("请连接 CA310/CA210", "连接异常",
+                    MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Retry)
+                {
+                    goto reconnectCa;
+                }
+                else
+                {
+                    this.Dispose();
+                }
+            }            
+            
             FormSplash formSplash = new FormSplash();
             formSplash.TopMost = true;
             this.Hide();
@@ -41,8 +74,14 @@ namespace AutoWBAdjustTool.CSharp
                 labelModelName.Text = ConfigXmlHandler.GetNodeValue("tvModel");
 
                 this.ShowInTaskbar = true;
-                this.Show();
+                this.Show();                
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (caConnected)
+                objCa.RemoteMode = 0;
         }
 
         private void toolStripMenuItemVPG_Click(object sender, EventArgs e)
@@ -68,5 +107,54 @@ namespace AutoWBAdjustTool.CSharp
             FormColorAnalyzer formColorAnalyzer = new FormColorAnalyzer();
             formColorAnalyzer.Show();
         }
+
+        private void toolStripMenuItemConnectCa_Click(object sender, EventArgs e)
+        {
+            if (isMsr)
+            {
+                objCa.RemoteMode = 1;
+                return;
+            }
+            else
+            {
+                if (MessageBox.Show("请将 CA310/CA210 的探头切换到 0-CAL", "CA310/CA210 初始化", 
+                    MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+                {                    
+                    retry:
+                    try
+                    {
+                        objCa.CalZero();
+                        objCa.SyncMode = 3;
+                        objCa.AveragingMode = 2;
+                        objCa.SetAnalogRange((float)2.5, (float)2.5);
+                        objCa.DisplayMode = 0;
+                        objMemory.ChannelNO = int.Parse(ConfigXmlHandler.GetNodeValue("caChannel"));
+
+                        if (MessageBox.Show("请将 CA310/CA210 的探头切换到 MEAS", "CA310/CA210 测试模式",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
+                        {
+                            isMsr = true;
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        if (MessageBox.Show("Zero Cal Error\nRetry?", "CalZero", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+                        {
+                            if (isMsr)
+                                objCa.RemoteMode = 0;
+
+                            return;                            
+                        }
+                        goto retry;
+                    }
+                }
+            }
+        }
+
+        private void toolStripMenuItemDisconnectCa_Click(object sender, EventArgs e)
+        {
+            if (isMsr)
+                objCa.RemoteMode = 0;
+        }        
     }
 }
