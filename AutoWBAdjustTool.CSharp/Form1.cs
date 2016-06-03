@@ -74,7 +74,7 @@ namespace AutoWBAdjustTool.CSharp
                 labelModelName.Text = ConfigXmlHandler.GetNodeValue("tvModel");
 
                 this.ShowInTaskbar = true;
-                this.Show();                
+                this.Show();
             }
         }
 
@@ -138,7 +138,7 @@ namespace AutoWBAdjustTool.CSharp
                     }
                     catch (Exception)
                     {
-                        if (MessageBox.Show("Zero Cal Error\nRetry?", "CalZero", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+                        if (MessageBox.Show("CA310/CA210 较零异常\n需要重试吗？", "CalZero", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
                         {
                             if (isMsr)
                                 objCa.RemoteMode = 0;

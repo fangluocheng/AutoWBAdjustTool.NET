@@ -77,7 +77,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IProtocal.cs" />
     <Compile Include="OutputLog.cs" />
+    <Compile Include="ProtocalLetv.cs" />
     <Compile Include="PublicStruct.cs" />
     <Compile Include="ConfigXmlHandler.cs" />
     <Compile Include="DotControl.cs">
@@ -136,18 +138,23 @@
     <Compile Include="VPGChroma.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormColorAnalyzer.resx">
       <DependentUpon>FormColorAnalyzer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCommonSetting.resx">
       <DependentUpon>FormCommonSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSpec.resx">
       <DependentUpon>FormSpec.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSplash.resx">
       <DependentUpon>FormSplash.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVPG.resx">
       <DependentUpon>FormVPG.cs</DependentUpon>
