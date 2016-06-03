@@ -79,7 +79,10 @@
   <ItemGroup>
     <Compile Include="IProtocal.cs" />
     <Compile Include="OutputLog.cs" />
+    <Compile Include="ProtocalCAN.cs" />
+    <Compile Include="ProtocalHaier.cs" />
     <Compile Include="ProtocalLetv.cs" />
+    <Compile Include="ProtocalLetvHimax.cs" />
     <Compile Include="PublicStruct.cs" />
     <Compile Include="ConfigXmlHandler.cs" />
     <Compile Include="DotControl.cs">
