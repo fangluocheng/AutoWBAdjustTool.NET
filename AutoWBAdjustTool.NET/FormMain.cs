@@ -23,7 +23,7 @@ namespace AutoWBAdjustTool.NET
         private Memory objMemory;
         private bool caConnected, isMsr;
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormMain_Load(object sender, EventArgs e)
         {
             reconnectCa:
             isMsr = false;
@@ -78,7 +78,7 @@ namespace AutoWBAdjustTool.NET
             }
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (caConnected)
                 objCa.RemoteMode = 0;
