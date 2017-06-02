@@ -110,9 +110,9 @@ namespace AutoWBAdjustTool.NET
 
         void IProtocal.SelColorTemp(string T, string inputSrcType, byte inputSrcPort)
         {
-            /* Cool:     6E 51 84 03 14 00 02 AE
-             * Standard: 6E 51 84 03 14 00 01 AD
-             * Warm:     6E 51 84 03 14 00 00 AC */
+            // Cool:     6E 51 84 03 14 00 02 AE
+            // Standard: 6E 51 84 03 14 00 01 AD
+            // Warm:     6E 51 84 03 14 00 00 AC
             mCmdByte[0] = 0x51;
             mCmdByte[1] = 0x84;
             mCmdByte[2] = 0x03;
@@ -140,9 +140,9 @@ namespace AutoWBAdjustTool.NET
 
         void IProtocal.SetRGBGain(string rgb, int value)
         {
-            /* R: 6E 51 84 03 16 00 XX CHK
-             * G: 6E 51 84 03 18 00 XX CHK
-             * B: 6E 51 84 03 1A 00 XX CHK */
+            // R: 6E 51 84 03 16 00 XX CHK
+            // G: 6E 51 84 03 18 00 XX CHK
+            // B: 6E 51 84 03 1A 00 XX CHK
             mCmdByte[0] = 0x51;
             mCmdByte[1] = 0x84;
             mCmdByte[2] = 0x03;
@@ -170,9 +170,9 @@ namespace AutoWBAdjustTool.NET
 
         void IProtocal.SetRGBOffset(string rgb, int value)
         {
-            /* R: 6E 51 84 03 6C 00 XX CHK
-             * G: 6E 51 84 03 6E 00 XX CHK
-             * B: 6E 51 84 03 70 00 XX CHK */
+            // R: 6E 51 84 03 6C 00 XX CHK
+            // G: 6E 51 84 03 6E 00 XX CHK
+            // B: 6E 51 84 03 70 00 XX CHK
             mCmdByte[0] = 0x51;
             mCmdByte[1] = 0x84;
             mCmdByte[2] = 0x03;

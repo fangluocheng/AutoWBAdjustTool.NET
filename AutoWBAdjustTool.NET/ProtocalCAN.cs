@@ -19,9 +19,9 @@ namespace AutoWBAdjustTool.NET
 
         private byte CalChkSum(byte[] data)
         {
-            /* byte10 is the checksum byte.
-             * byte10 = 0xFF - byte1 - byte2 - ... - byte9 + 1
-             * If it hits 0xFF, ignore 0xFF and plus 1 instead. */
+            // byte10 is the checksum byte.
+            // byte10 = 0xFF - byte1 - byte2 - ... - byte9 + 1
+            // If it hits 0xFF, ignore 0xFF and plus 1 instead.
             byte result = 0xFF;
 
             for (int i = 0; i <= 9; i++)
@@ -171,9 +171,9 @@ namespace AutoWBAdjustTool.NET
 
         void IProtocal.SetRGBGain(string rgb, int value)
         {
-            /* R: 55 0A 02 XX XX 00 00 00 00 00 CHK FE
-             * G: 55 0B 02 XX XX 00 00 00 00 00 CHK FE
-             * B: 55 0C 02 XX XX 00 00 00 00 00 CHK FE */
+            // R: 55 0A 02 XX XX 00 00 00 00 00 CHK FE
+            // G: 55 0B 02 XX XX 00 00 00 00 00 CHK FE
+            // B: 55 0C 02 XX XX 00 00 00 00 00 CHK FE
             mCmdByte[0] = 0x55;
 
             switch (rgb.ToUpper())
@@ -205,9 +205,9 @@ namespace AutoWBAdjustTool.NET
 
         void IProtocal.SetRGBOffset(string rgb, int value)
         {
-            /* R: 55 04 02 XX XX 00 00 00 00 00 CHK FE
-             * G: 55 05 02 XX XX 00 00 00 00 00 CHK FE
-             * B: 55 06 02 XX XX 00 00 00 00 00 CHK FE */
+            // R: 55 04 02 XX XX 00 00 00 00 00 CHK FE
+            // G: 55 05 02 XX XX 00 00 00 00 00 CHK FE
+            // B: 55 06 02 XX XX 00 00 00 00 00 CHK FE
             mCmdByte[0] = 0x55;
 
             switch (rgb.ToUpper())

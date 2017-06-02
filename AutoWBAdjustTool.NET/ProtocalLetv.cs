@@ -140,10 +140,10 @@ namespace AutoWBAdjustTool.NET
 
         void IProtocal.SelColorTemp(string T, string inputSrcType, byte inputSrcPort)
         {
-            /* HDMI1
-             * Cool:     6E 51 86 03 FE 14 0A 23 01 78
-             * Standard: 6E 51 86 03 FE 14 06 23 01 74
-             * Warm:     6E 51 86 03 FE 14 05 23 01 77 */
+            // HDMI1
+            // Cool:     6E 51 86 03 FE 14 0A 23 01 78
+            // Standard: 6E 51 86 03 FE 14 06 23 01 74
+            // Warm:     6E 51 86 03 FE 14 05 23 01 77
             mCmdByte[0] = 0x6E;
             mCmdByte[1] = 0x51;
             mCmdByte[2] = 0x86;
@@ -182,9 +182,9 @@ namespace AutoWBAdjustTool.NET
 
         void IProtocal.SetRGBGain(string rgb, int value)
         {
-            /* R: 6E 51 86 03 FE 16 00 XX XX CHK
-             * G: 6E 51 86 03 FE 18 00 XX XX CHK
-             * B: 6E 51 86 03 FE 1A 00 XX XX CHK */
+            // R: 6E 51 86 03 FE 16 00 XX XX CHK
+            // G: 6E 51 86 03 FE 18 00 XX XX CHK
+            // B: 6E 51 86 03 FE 1A 00 XX XX CHK
             mCmdByte[0] = 0x6E;
             mCmdByte[1] = 0x51;
             mCmdByte[2] = 0x86;
@@ -215,9 +215,9 @@ namespace AutoWBAdjustTool.NET
 
         void IProtocal.SetRGBOffset(string rgb, int value)
         {
-            /* R: 6E 51 86 03 FE 6C 00 XX XX CHK
-             * G: 6E 51 86 03 FE 6E 00 XX XX CHK
-             * B: 6E 51 86 03 FE 70 00 XX XX CHK */
+            // R: 6E 51 86 03 FE 6C 00 XX XX CHK
+            // G: 6E 51 86 03 FE 6E 00 XX XX CHK
+            // B: 6E 51 86 03 FE 70 00 XX XX CHK
             mCmdByte[0] = 0x6E;
             mCmdByte[1] = 0x51;
             mCmdByte[2] = 0x86;
