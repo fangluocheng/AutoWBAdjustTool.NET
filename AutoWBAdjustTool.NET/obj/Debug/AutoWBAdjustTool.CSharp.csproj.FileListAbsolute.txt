@@ -1,4 +1,0 @@
-F:\Git-Projects\AutoWBAdjustTool.CSharp\AutoWBAdjustTool.CSharp\obj\Debug\Interop.CA200SRVRLib.dll
-F:\Git-Projects\AutoWBAdjustTool.CSharp\AutoWBAdjustTool.CSharp\obj\Debug\AutoWBAdjustTool.CSharp.csproj.ResolveComReference.cache
-F:\Git-Projects\AutoWBAdjustTool.Net\AutoWBAdjustTool.CSharp\obj\Debug\Interop.CA200SRVRLib.dll
-F:\Git-Projects\AutoWBAdjustTool.Net\AutoWBAdjustTool.CSharp\obj\Debug\AutoWBAdjustTool.CSharp.csproj.ResolveComReference.cache
