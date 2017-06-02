@@ -15,7 +15,7 @@ namespace AutoWBAdjustTool.NET
             }
         }
 
-        private byte[] mCmdByte = new byte[10];               
+        private byte[] mCmdByte = new byte[10];
 
         private byte CalChkSum(byte[] data)
         {

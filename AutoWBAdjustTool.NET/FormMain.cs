@@ -49,7 +49,7 @@ namespace AutoWBAdjustTool.NET
                 {
                     this.Dispose();
                 }
-            }            
+            }
             
             FormSplash formSplash = new FormSplash();
             formSplash.TopMost = true;
@@ -119,7 +119,7 @@ namespace AutoWBAdjustTool.NET
             {
                 if (MessageBox.Show("请将 CA310/CA210 的探头切换到 0-CAL", "CA310/CA210 初始化", 
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
-                {                    
+                {
                     retry:
                     try
                     {
@@ -143,7 +143,7 @@ namespace AutoWBAdjustTool.NET
                             if (isMsr)
                                 objCa.RemoteMode = 0;
 
-                            return;                            
+                            return;
                         }
                         goto retry;
                     }
@@ -155,6 +155,6 @@ namespace AutoWBAdjustTool.NET
         {
             if (isMsr)
                 objCa.RemoteMode = 0;
-        }        
+        }
     }
 }
